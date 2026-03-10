@@ -1667,6 +1667,18 @@ button { cursor: none; }
 }
 
 /* ─── JOIN PAGE ─────────────────────────────────────────── */
+/* Form section dividers */
+.form-section-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--orange);
+  margin: 28px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,69,0,.2);
+  text-transform: uppercase;
+}
+.req { color: var(--orange); }
 .join-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
