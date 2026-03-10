@@ -9,7 +9,76 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+<style>
+  /* Bio justified text */
+  .coach-bio p {
+    text-align: justify;
+    hyphens: auto;
+    line-height: 1.9;
+  }
+  /* Orange highlight — achievements, key terms */
+  .hl-orange {
+    color: var(--orange);
+    font-weight: 500;
+  }
+  /* Subtle white highlight — proper nouns, places */
+  .hl-white {
+    color: rgba(255,255,255,.95);
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255,69,0,.45);
+    padding-bottom: 1px;
+  }
+  /* Philosophy quote pull-out */
+  .bio-quote {
+    display: block;
+    margin: 18px 0;
+    padding: 14px 22px;
+    border-left: 3px solid var(--orange);
+    background: rgba(255,69,0,.06);
+    font-style: italic;
+    font-size: 14.5px;
+    color: rgba(255,255,255,.8);
+    line-height: 1.75;
+  }
+  .bio-quote strong {
+    color: var(--orange);
+    font-style: normal;
+    font-weight: 600;
+  }
+  /* Cert inline list */
+  .bio-certs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 0 14px 0;
+    padding-left: 4px;
+  }
+  .bio-certs li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: rgba(255,255,255,.65);
+    font-weight: 300;
+    list-style: none;
+  }
+  .bio-certs li::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--orange);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  /* Sign-off */
+  .bio-signoff {
+    display: block;
+    margin-top: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 19px;
+    letter-spacing: 3px;
+    color: var(--orange);
+  }
+</style>
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
@@ -18,8 +87,8 @@
   <a href="index.html" class="nav__logo">
     <div class="nav__logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div>
     <div class="nav__logo-text">
-      <span class="line1">RUN CLUB</span>
       <span class="line2">NANU NIMMA <span>CK</span></span>
+      <span class="line1">RUN CLUB</span>
     </div>
   </a>
 
@@ -56,67 +125,6 @@
   <a href="join.html" class="mobile-join">Join Us</a>
 </div>
 
-<!-- ── HERO ── -->
-<section class="home-hero">
-  <div class="home-hero__bg"></div>
-  <div class="home-hero__grid"></div>
-  <div class="home-hero__ticker">RUN · NANU NIMMA CK · PUSH ·</div>
-  <div class="home-hero__track"></div>
-
-  <div class="home-hero__content">
-    <div class="home-hero__eyebrow">
-      <div class="home-hero__eyebrow-line"></div>
-      <span>Est. 2024 · Bengaluru · Nanu Nimma CK</span>
-    </div>
-    <h1 class="home-hero__headline">
-      WE<br>
-      <span class="line-accent">RUN</span><br>
-      <span class="line-outline">TOGETHER</span>
-    </h1>
-    <p class="home-hero__sub">A community of runners pushing limits, building bonds, and chasing every sunrise one mile at a time.</p>
-    <div class="home-hero__actions">
-      <a href="join.html" class="btn-primary">Join the Club</a>
-      <a href="runs.html" class="btn-ghost">See Schedule →</a>
-    </div>
-  </div>
-
-  <div class="home-hero__stats">
-    <div class="stat">
-      <div class="stat__num">15<em>+</em></div>
-      <div class="stat__label">Active Members</div>
-    </div>
-    <div class="stat__divider"></div>
-    <div class="stat">
-      <div class="stat__num">4<em>×</em></div>
-      <div class="stat__label">Weekly Runs</div>
-    </div>
-    <div class="stat__divider"></div>
-    <div class="stat">
-      <div class="stat__num">1<em>yr</em></div>
-      <div class="stat__label">Running Together</div>
-    </div>
-  </div>
-</section>
-
-<!-- ── MARQUEE ── -->
-<div class="marquee-band">
-  <div class="marquee-band__track">
-    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Early Morning Runs</span></div>
-    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Trail Adventures</span></div>
-    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Marathon Training</span></div>
-    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Community Runs</span></div>
-    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Speed Workouts</span></div>
-    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Recovery Jogs</span></div>
-    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Race Day Support</span></div>
-    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Early Morning Runs</span></div>
-    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Trail Adventures</span></div>
-    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Marathon Training</span></div>
-    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Community Runs</span></div>
-    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Speed Workouts</span></div>
-    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Recovery Jogs</span></div>
-    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Race Day Support</span></div>
-  </div>
-</div>
 
 <!-- ── ABOUT INTRO ── -->
 <section class="section section--dark">
@@ -128,10 +136,10 @@
         <div class="label__dot"></div>
         <span class="label__text">Who We Are</span>
       </div>
-      <h2 class="section__heading">MORE THAN<br>JUST A <span class="accent">RUN</span></h2>
-      <p style="margin-top:28px; font-size:17px; font-weight:300; color:rgba(255,255,255,.55); line-height:1.85;">
-        Joining Run With Nimma CK means becoming part of a motivated running community in Bengaluru. We run together, support each other, and celebrate every milestone from first steps to personal bests. Whether you're a beginner or an experienced runner, you'll find a welcoming tribe that pushes you to be your best self on and off the road. 
-    </p>
+      <h2 class="section__heading">Run With <span class="accent">Nimma CK</span></h2>
+      <h2>Run Together Grow Together</h2>
+      <p style="margin-top:28px; font-size:17px; font-weight:500; color:rgb(248, 248, 248); line-height:1.85;"> Run with Nimma CK is a running community in Bengaluru focused on structured Training, Scientific workouts, and Consistent progress. <br> Whether you're a beginner starting your first 5K or an experienced runner chasing a faster marathon, our goal is to help you train smarter and run stronger</p>
+<br>
       <div style="margin-top:36px; display:flex; gap:20px; flex-wrap:wrap;">
         <a href="about-club.html" class="btn-primary">Our Story</a>
         <a href="about-coach.html" class="btn-outline">Meet the Coach</a>
@@ -174,6 +182,205 @@
       <div class="gallery-progress" id="galleryProgress"></div>
     </div>
   </div>
+
+
+
+<!-- ── MARQUEE ── -->
+<div class="marquee-band">
+  <div class="marquee-band__track">
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Early Morning Runs</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Trail Adventures</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Marathon Training</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Community Runs</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Speed Workouts</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Recovery Jogs</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Race Day Support</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Early Morning Runs</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Trail Adventures</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Marathon Training</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Community Runs</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Speed Workouts</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Recovery Jogs</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Race Day Support</span></div>
+  </div>
+</div>
+
+<br>
+
+      <!-- ── Training Programs Offered ── -->
+<div>
+      <div class="label">
+        <div class="label__dot"></div>
+      </div>
+     
+<section class="section section--dark">
+   <h2 class="section__heading">Programs<span class="accent"> and Training</span></h2>
+      <p style="margin-top:20px; font-size:17px; font-weight:500; color:rgb(248, 248, 248); line-height:1.85;"> We provide structured training programs designed for runners at every level.</p>
+      <br>
+  <div class="runs-grid reveal">
+    <!-- Tuesday -->
+    <div class="run-card">
+      <div class="run-card__bg-num">01</div>
+      <div class="run-card__name">Beginner<br>PROGRAM</div>
+      <div class="run-card__details">
+        <div class="run-detail">
+          <div class="run-detail__icon">
+             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <span>Learn the Basics</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <span> Focus on building Endurance</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>          
+        </div>
+          <span>Prepare for your first 5K or 10K</span>
+        </div>
+      </div>
+      <div class="run-card__badge">Beginners</div>
+    </div>
+
+    <div class="run-card">
+      <div class="run-card__bg-num">02</div>
+      <div class="run-card__name">Intermediate<br>Program</div>
+      <div class="run-card__details">
+        <div class="run-detail">
+          <div class="run-detail__icon">
+             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <span>Improve speed and endurance</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <span> Structured workouts including tempo runs and intervals</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>          
+        </div>
+          <span>Preparing for Faster 10K and Half Marathon</span>
+        </div>
+      </div>
+      <div class="run-card__badge">Intermediate</div>
+    </div>
+
+    <div class="run-card">
+      <div class="run-card__bg-num">03</div>
+      <div class="run-card__name">Advanced <br>Program</div>
+      <div class="run-card__details">
+        <div class="run-detail">
+          <div class="run-detail__icon">
+             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <span>Training for Experienced runners</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <span>Focus on faster HM & FM Timing</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>          
+        </div>
+          <span>Multiple Training Methods</span>
+        </div>
+      </div>
+      <div class="run-card__badge">Advanced</div>
+      </section>
+    </div>
+    </div>
+
+
+    <!-- ── PAGE HERO ── -->
+<section class="page-hero">
+  <div class="page-hero__bg"></div>
+  <div class="page-hero__grid"></div>
+  <div class="page-hero__bar"></div>
+  <div class="page-hero__content">
+    <div class="label">
+      <div class="label__dot"></div>
+      <span class="label__text">About the Coach</span>
+    </div>
+    <h1 class="page-hero__title">MEET THE <span class="accent">COACH</span></h1>
+    <h1>NANU NIMMA <span class="accent">CK</span></h1>
+    <p class="page-hero__sub">The person who gets up earlier than everyone else, so you can run better.</p>
+  </div>
+</section>
+
+<!-- ── COACH PROFILE ── -->
+<section class="section section--dark">
+  <div class="coach-hero-card reveal">
+    <div class="coach-photo-wrap">
+      <div class="coach-photo">
+        <img src="ckprofile.jpeg" alt="Coach Photo" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div class="coach-photo__accent"></div>
+      </div>
+      <div class="coach-credentials">
+        <div class="coach-cred">
+          <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          <span>ACSM CERTIFIED</span>
+        </div>
+        <div class="coach-cred">
+          <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          <span>PUMA SPONSORED ATHLETE</span>
+        </div>
+        <div class="coach-cred">
+          <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          <span>NATIONAL MARATHON WINNER</span>
+        </div>
+        <div class="coach-cred">
+          <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          <span>PROCLAM SLAM ALL INDIA 2ND PLACE</span>
+        </div>
+        <div class="coach-cred">
+          <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          <span>AFI PRE L1</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="coach-info">
+      <div class="coach-name">CHANDRAKANTH M</div>
+      <div class="coach-role">Head Coach & Founder · Nanu Nimma CK Run Club</div>
+      <div class="coach-bio">
+
+        <p><span class="hl-white">Nanu Nimma CK</span> is both a <span class="hl-orange">competitive runner</span> and a <span class="hl-orange">running coach</span> based in <span class="hl-white">Bengaluru</span>. His journey began as an athlete, and through years of <span class="hl-white">consistent training and racing</span>, he developed a deep understanding of what it takes to improve as a runner.</p>
+
+        <p>Before becoming a coach, he first built his foundation as a runner, achieving strong performances including a <span class="hl-orange">sub-2:30 marathon</span> and <span class="hl-orange">sub-72-minute half marathon</span>. These experiences shape the way he approaches coaching today.</p>
+
+        <span class="bio-quote"><strong>"Athlete first. Winning comes second."</strong> His focus is not only on results but on helping runners develop <strong>discipline</strong>, <strong>consistency</strong>, and a <strong>long-term approach</strong> to training.</span>
+
+        <p>Along with his competitive experience, he holds certifications including:</p>
+        <ul class="bio-certs">
+          <li><span class="hl-white">ACSM Certified</span></li>
+          <li><span class="hl-white">AFI Pre-Level 1</span></li>
+        </ul>
+
+        <p>What makes his coaching unique is the balance between <span class="hl-white">scientific knowledge</span> and <span class="hl-white">real racing experience</span>. Having trained as a <span class="hl-orange">competitive athlete</span> himself, he understands the demands of structured running training.</p>
+
+        <p>As a <span class="hl-white">Physical Education teacher</span>, he also understands the challenges faced by <span class="hl-white">working professionals</span> who want to pursue running seriously while managing their daily responsibilities.</p>
+
+        <p>Through <span class="hl-orange">Run With Nimma CK</span>, his goal is to build a strong <span class="hl-white">running community</span> where athletes train together, support each other, and continue improving — step by step.</p>
+
+        <span class="bio-signoff">Run Together. Grow Together.</span>
+
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
   <!-- Bento -->
   <div class="bento reveal">

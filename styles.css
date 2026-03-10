@@ -91,7 +91,7 @@ button { cursor: none; }
 }
 .label__text {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -1054,11 +1054,11 @@ button { cursor: none; }
   justify-content: center;
   flex-shrink: 0;
 }
-.run-detail__icon svg { width: 14px; height: 14px; fill: var(--orange); }
+.run-detail__icon svg { width: 14px; height: 14px; fill: var(--white); }
 .run-detail span {
-  font-size: 13px;
-  color: var(--muted-light);
-  font-weight: 300;
+  font-size: 15px;
+  color: var(--orange-bright);
+  font-weight: 600;
 }
 .run-card__badge {
   display: inline-block;
@@ -1131,7 +1131,7 @@ button { cursor: none; }
 .about-split p {
   font-size: 16px;
   font-weight: 300;
-  color: rgba(255,255,255,.6);
+  color: rgb(255, 255, 255);
   line-height: 1.85;
   margin-bottom: 22px;
 }
