@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nanu Nimma CK — Runs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ── NAV ── -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav__logo"><div class="nav__logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div><div class="nav__logo-text"><span class="line1">RUN CLUB</span><span class="line2">NANU NIMMA <span>CK</span></span></div></a>
+  <ul class="nav__links">
+    <li><a href="index.html" class="nav__link">Home</a></li>
+    <li class="nav__dropdown">
+      <a class="nav__link" href="#">About <span class="nav__caret">▾</span></a>
+      <div class="nav__dropdown-menu">
+        <a href="about-club.html">About the Club</a>
+        <a href="about-coach.html">About the Coach</a>
+      </div>
+    </li>
+    <li><a href="runs.html" class="nav__link active">Runs</a></li>
+    <li><a href="community.html" class="nav__link">Community</a></li>
+  </ul>
+  <a href="join.html" class="nav__join">Join Us</a>
+  <button class="nav__hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav__mobile" id="mobileNav">
+  <a href="index.html">Home</a>
+  <span class="sub-label">About</span>
+  <a href="about-club.html" style="font-size:28px;">About the Club</a>
+  <a href="about-coach.html" style="font-size:28px;">About the Coach</a>
+  <div class="divider"></div>
+  <a href="runs.html">Runs</a>
+  <a href="community.html">Community</a>
+  <a href="join.html" class="mobile-join">Join Us</a>
+</div>
+
+<!-- ── PAGE HERO ── -->
+<section class="page-hero">
+  <div class="page-hero__bg"></div>
+  <div class="page-hero__grid"></div>
+  <div class="page-hero__bar"></div>
+  <div class="page-hero__content">
+    <div class="label">
+      <div class="label__dot"></div>
+      <span class="label__text">Weekly Schedule</span>
+    </div>
+    <h1 class="page-hero__title">FIND <span class="accent">YOUR</span> RUN</h1>
+    <p class="page-hero__sub">Three runs a week, different routes, different intensities — one community.</p>
+  </div>
+</section>
+
+<!-- ── MARQUEE ── -->
+<div class="marquee-band">
+  <div class="marquee-band__track">
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Tuesday · Speed</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Thursday · Easy</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Sunday · Long Run</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Cubbon Park</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Ulsoor Lake</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Lalbagh</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Tuesday · Speed</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Thursday · Easy</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Sunday · Long Run</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Cubbon Park</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Ulsoor Lake</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Lalbagh</span></div>
+  </div>
+</div>
+
+<!-- ── WEEKLY RUNS ── -->
+<section class="section section--dark">
+  <div class="reveal" style="margin-bottom:64px;">
+    <div class="label">
+      <div class="label__dot"></div>
+      <span class="label__text">This Week</span>
+    </div>
+    <h2 class="section__heading">WEEKLY <span class="accent">RUNS</span></h2>
+    <p style="margin-top:20px; font-size:15px; font-weight:300; color:var(--muted); max-width:480px; line-height:1.75;">All runs are free for members. New runners always welcome — just show up at the meeting point 5 minutes early.</p>
+  </div>
+
+  <div class="runs-grid reveal">
+    <!-- Tuesday -->
+    <div class="run-card">
+      <div class="run-card__bg-num">01</div>
+      <div class="run-card__day">Tuesday</div>
+      <div class="run-card__name">SPEED<br>SESSION</div>
+      <div class="run-card__details">
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <span>Cubbon Park — Main Gate</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <span>6:00 AM — 7:15 AM</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><path d="M13.49 5.48c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.6 13.9l1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1l-5.2 2.2v4.7h2v-3.4l1.8-.7-1.6 8.1-4.9-1-.4 2 7 1.4z"/></svg>
+          </div>
+          <span>Intervals · 8–10 km total</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <span>Avg group size: 35 runners</span>
+        </div>
+      </div>
+      <div class="run-card__badge">Intermediate+</div>
+    </div>
+
+    <!-- Thursday -->
+    <div class="run-card">
+      <div class="run-card__bg-num">02</div>
+      <div class="run-card__day">Thursday</div>
+      <div class="run-card__name">EASY<br>MILES</div>
+      <div class="run-card__details">
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <span>Ulsoor Lake — East Gate</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <span>6:30 AM — 7:30 AM</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><path d="M13.49 5.48c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.6 13.9l1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1l-5.2 2.2v4.7h2v-3.4l1.8-.7-1.6 8.1-4.9-1-.4 2 7 1.4z"/></svg>
+          </div>
+          <span>Conversational · 5–8 km</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <span>Avg group size: 55 runners</span>
+        </div>
+      </div>
+      <div class="run-card__badge">All Levels</div>
+    </div>
+
+    <!-- Sunday -->
+    <div class="run-card">
+      <div class="run-card__bg-num">03</div>
+      <div class="run-card__day">Sunday</div>
+      <div class="run-card__name">LONG<br>RUN</div>
+      <div class="run-card__details">
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <span>Lalbagh Botanical Garden</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <span>5:30 AM — 8:30 AM</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><path d="M13.49 5.48c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.6 13.9l1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1l-5.2 2.2v4.7h2v-3.4l1.8-.7-1.6 8.1-4.9-1-.4 2 7 1.4z"/></svg>
+          </div>
+          <span>Endurance · 15–32 km</span>
+        </div>
+        <div class="run-detail">
+          <div class="run-detail__icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <span>Avg group size: 80 runners</span>
+        </div>
+      </div>
+      <div class="run-card__badge">Advanced · Sub-groups</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHAT TO BRING ── -->
+<section class="section section--charcoal">
+  <div class="reveal">
+    <div class="label">
+      <div class="label__dot"></div>
+      <span class="label__text">Before You Come</span>
+    </div>
+    <h2 class="section__heading">WHAT TO <span class="accent">BRING</span></h2>
+  </div>
+
+  <div class="values-grid reveal" style="margin-top:56px;">
+    <div class="value-card">
+      <div class="value-card__num">👟</div>
+      <h4>RUNNING SHOES</h4>
+      <p>Any pair you're comfortable in. We'll tell you what's wrong with them — kindly.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-card__num">💧</div>
+      <h4>WATER BOTTLE</h4>
+      <p>For Sunday runs especially. Hydration stops are communal — everyone looks out for everyone.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-card__num">📱</div>
+      <h4>STRAVA / WATCH</h4>
+      <p>Track your run and join our Strava club. Every km counts — even the recovery ones.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-card__num">🌅</div>
+      <h4>AN EARLY ALARM</h4>
+      <p>We start on time. The route won't wait. But we promise the sunrise is worth it.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-card__num">🧡</div>
+      <h4>OPEN MIND</h4>
+      <p>All paces, all ages, all backgrounds. Leave the ego at home, bring the enthusiasm.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-card__num">☕</div>
+      <h4>POST-RUN PLANS</h4>
+      <p>We usually head to a chai stall after Sunday runs. Not mandatory. But honestly, why wouldn't you?</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── TRAINING PLANS ── -->
+<section class="section section--darker">
+  <div class="reveal">
+    <div class="label">
+      <div class="label__dot"></div>
+      <span class="label__text">Structured Programmes</span>
+    </div>
+    <h2 class="section__heading">TRAINING <span class="accent">PLANS</span></h2>
+    <p style="margin-top:20px; font-size:15px; font-weight:300; color:var(--muted); max-width:480px; line-height:1.75;">Coach-designed, 12-week plans available for all distances. Included with full membership.</p>
+  </div>
+
+  <div class="plans-table-wrap reveal">
+    <table class="plans-table">
+      <thead>
+        <tr>
+          <th>Programme</th>
+          <th>Duration</th>
+          <th>Weekly Mileage</th>
+          <th>Level</th>
+          <th>Next Start</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Couch to 5K</td>
+          <td>8 weeks</td>
+          <td>12–25 km</td>
+          <td><span class="level-pill level-pill--beginner">Beginner</span></td>
+          <td>April 7, 2026</td>
+        </tr>
+        <tr>
+          <td>5K to 10K</td>
+          <td>10 weeks</td>
+          <td>25–45 km</td>
+          <td><span class="level-pill level-pill--beginner">Beginner</span></td>
+          <td>April 7, 2026</td>
+        </tr>
+        <tr>
+          <td>Half Marathon Prep</td>
+          <td>12 weeks</td>
+          <td>45–70 km</td>
+          <td><span class="level-pill level-pill--intermediate">Intermediate</span></td>
+          <td>March 24, 2026</td>
+        </tr>
+        <tr>
+          <td>Marathon Build</td>
+          <td>16 weeks</td>
+          <td>60–100 km</td>
+          <td><span class="level-pill level-pill--intermediate">Intermediate</span></td>
+          <td>March 24, 2026</td>
+        </tr>
+        <tr>
+          <td>Sub-4 Marathon</td>
+          <td>16 weeks</td>
+          <td>80–120 km</td>
+          <td><span class="level-pill level-pill--advanced">Advanced</span></td>
+          <td>March 17, 2026</td>
+        </tr>
+        <tr>
+          <td>Ultra Trail Prep</td>
+          <td>20 weeks</td>
+          <td>80–150 km</td>
+          <td><span class="level-pill level-pill--advanced">Advanced</span></td>
+          <td>On request</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="section section--charcoal" style="text-align:center;">
+  <div class="reveal">
+    <h2 class="section__heading">READY TO <span class="accent">SHOW UP?</span></h2>
+    <p style="margin:24px auto 40px; max-width:400px; font-size:15px; font-weight:300; color:var(--muted); line-height:1.8;">Your first run is free. No registration needed — just arrive at the meeting point.</p>
+    <a href="join.html" class="btn-primary">Become a Member</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <div class="footer__brand-logo"><div class="footer__brand-logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div><div class="footer__brand-logo-text"><span class="fl1">Run Club</span><span class="fl2">NANU NIMMA <span>CK</span></span></div></div>
+      <p class="footer__brand-text">A run club for every pace, every person, every morning. Bengaluru's community of runners since 2019.</p>
+    </div>
+    <div class="footer__col"><h5>Club</h5><ul><li><a href="about-club.html">About the Club</a></li><li><a href="about-coach.html">About the Coach</a></li><li><a href="runs.html">Run Schedule</a></li><li><a href="join.html">Membership</a></li></ul></div>
+    <div class="footer__col"><h5>Training</h5><ul><li><a href="runs.html">Beginner Plans</a></li><li><a href="runs.html">5K to 10K</a></li><li><a href="runs.html">Half Marathon</a></li><li><a href="runs.html">Full Marathon</a></li></ul></div>
+    <div class="footer__col"><h5>Connect</h5><ul><li><a href="#">Instagram</a></li><li><a href="#">Strava Club</a></li><li><a href="#">WhatsApp Group</a></li><li><a href="#">Contact</a></li></ul></div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">© 2026 Nanu Nimma CK Run Club · Bengaluru, India</p>
+    <div class="socials">
+      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg></a>
+      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

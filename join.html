@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nanu Nimma CK — Join Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ── NAV ── -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav__logo"><div class="nav__logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div><div class="nav__logo-text"><span class="line1">RUN CLUB</span><span class="line2">NANU NIMMA <span>CK</span></span></div></a>
+  <ul class="nav__links">
+    <li><a href="index.html" class="nav__link">Home</a></li>
+    <li class="nav__dropdown">
+      <a class="nav__link" href="#">About <span class="nav__caret">▾</span></a>
+      <div class="nav__dropdown-menu">
+        <a href="about-club.html">About the Club</a>
+        <a href="about-coach.html">About the Coach</a>
+      </div>
+    </li>
+    <li><a href="runs.html" class="nav__link">Runs</a></li>
+    <li><a href="community.html" class="nav__link">Community</a></li>
+  </ul>
+  <a href="join.html" class="nav__join" style="background:var(--orange-bright);">Join Us</a>
+  <button class="nav__hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav__mobile" id="mobileNav">
+  <a href="index.html">Home</a>
+  <span class="sub-label">About</span>
+  <a href="about-club.html" style="font-size:28px;">About the Club</a>
+  <a href="about-coach.html" style="font-size:28px;">About the Coach</a>
+  <div class="divider"></div>
+  <a href="runs.html">Runs</a>
+  <a href="community.html">Community</a>
+  <a href="join.html" class="mobile-join">Join Us</a>
+</div>
+
+<!-- ── PAGE HERO ── -->
+<section class="page-hero" style="min-height:46vh;">
+  <div class="page-hero__bg" style="background:radial-gradient(ellipse at 50% 50%, rgba(255,69,0,.16) 0%, transparent 65%), linear-gradient(160deg,#050505 0%,#0D0D0D 100%);"></div>
+  <div class="page-hero__grid"></div>
+  <div class="page-hero__bar"></div>
+  <div class="page-hero__content">
+    <div class="label">
+      <div class="label__dot"></div>
+      <span class="label__text">Membership</span>
+    </div>
+    <h1 class="page-hero__title"><span class="accent">JOIN</span> THE CLUB</h1>
+    <p class="page-hero__sub">842 runners can't be wrong. Your first run is always free.</p>
+  </div>
+</section>
+
+<!-- ── JOIN SECTION ── -->
+<section class="section section--dark">
+  <div class="join-split reveal">
+
+    <!-- LEFT: benefits -->
+    <div class="join-split__left">
+      <div class="label">
+        <div class="label__dot"></div>
+        <span class="label__text">Why Join Nanu Nimma CK</span>
+      </div>
+      <h2 class="section__heading">WHAT YOU <span class="accent">GET</span></h2>
+      <p style="margin-top:24px;">Nanu Nimma CK membership isn't just a run three times a week. It's structured coaching, community accountability, event access, and the kind of support that turns good intentions into real habits.</p>
+      <p>Your first run is free — no forms, no commitment. Just show up at any of our weekly runs. After that, membership is ₹499/month or ₹4,999/year.</p>
+
+      <div class="join-perks">
+        <div class="join-perk">
+          <div class="join-perk__icon">
+            <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <div>
+            <div class="join-perk__title">3 Weekly Group Runs</div>
+            <div class="join-perk__desc">Tuesday speed, Thursday easy miles, Sunday long run — all coach-led with warm-up and briefing included.</div>
+          </div>
+        </div>
+        <div class="join-perk">
+          <div class="join-perk__icon">
+            <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div>
+            <div class="join-perk__title">Personalised Training Plans</div>
+            <div class="join-perk__desc">12–20 week structured programmes for 5K through ultra. Adapted to your life, schedule, and goals.</div>
+          </div>
+        </div>
+        <div class="join-perk">
+          <div class="join-perk__icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div>
+            <div class="join-perk__title">Community & Accountability</div>
+            <div class="join-perk__desc">WhatsApp group, Strava club, and pace partners who show up even when you don't feel like it.</div>
+          </div>
+        </div>
+        <div class="join-perk">
+          <div class="join-perk__icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </div>
+          <div>
+            <div class="join-perk__title">Priority Event Access</div>
+            <div class="join-perk__desc">First registration slots for all Nanu Nimma CK events, trail runs, and race-day pace groups.</div>
+          </div>
+        </div>
+        <div class="join-perk">
+          <div class="join-perk__icon">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <div>
+            <div class="join-perk__title">Nutrition & Recovery Support</div>
+            <div class="join-perk__desc">Monthly workshops on fuelling, sleep, and injury prevention from coach Arjun and guest specialists.</div>
+          </div>
+        </div>
+        <div class="join-perk">
+          <div class="join-perk__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div>
+            <div class="join-perk__title">Member Milestones & Merch</div>
+            <div class="join-perk__desc">Personal bests celebrated publicly. Annual club kit at discounted rates. You earn the orange.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: form -->
+    <div>
+      <div class="join-form-card">
+        <h3>GET STARTED</h3>
+        <p class="sub">Fill in your details and we'll reach out within 24 hours to welcome you to the club.</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Ananya">
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Krishnan">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="you@example.com">
+        </div>
+
+        <div class="form-group">
+          <label>Phone (WhatsApp)</label>
+          <input type="tel" placeholder="+91 98765 43210">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Current Pace</label>
+            <select>
+              <option value="" disabled selected>Select pace</option>
+              <option>I'm just starting out</option>
+              <option>7:00–8:30 /km</option>
+              <option>5:30–7:00 /km</option>
+              <option>4:30–5:30 /km</option>
+              <option>Under 4:30 /km</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Goal Distance</label>
+            <select>
+              <option value="" disabled selected>Select goal</option>
+              <option>5K</option>
+              <option>10K</option>
+              <option>Half Marathon</option>
+              <option>Full Marathon</option>
+              <option>Ultra / Trail</option>
+              <option>Just for fun</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Anything else we should know?</label>
+          <textarea placeholder="Injuries, goals, schedule constraints, questions for the coach..."></textarea>
+        </div>
+
+        <button class="form-submit" type="button" id="submitBtn">Register My Interest</button>
+        <p class="form-note">Your first run is free. No payment required at this stage. We'll contact you with the next steps.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="section section--charcoal">
+  <div class="reveal">
+    <div class="label">
+      <div class="label__dot"></div>
+      <span class="label__text">Common Questions</span>
+    </div>
+    <h2 class="section__heading">GOT <span class="accent">QUESTIONS?</span></h2>
+  </div>
+
+  <div class="about-split reveal" style="margin-top:60px; gap:40px;">
+    <div style="display:flex; flex-direction:column; gap:24px;">
+      <div style="padding:28px 32px; background:var(--mid); border-left:2px solid var(--orange);">
+        <h4 style="font-family:'Barlow Condensed',sans-serif; font-size:16px; font-weight:700; letter-spacing:1px; margin-bottom:10px;">Do I need to be fit to join?</h4>
+        <p style="font-size:14px; font-weight:300; color:var(--muted); line-height:1.75;">Absolutely not. Our Thursday easy run and Couch-to-5K programme are specifically designed for complete beginners. No pace is too slow.</p>
+      </div>
+      <div style="padding:28px 32px; background:var(--mid); border-left:2px solid var(--orange);">
+        <h4 style="font-family:'Barlow Condensed',sans-serif; font-size:16px; font-weight:700; letter-spacing:1px; margin-bottom:10px;">What does membership cost?</h4>
+        <p style="font-size:14px; font-weight:300; color:var(--muted); line-height:1.75;">₹499/month or ₹4,999/year. Your first run is always free with no commitment. Annual membership saves you two months.</p>
+      </div>
+      <div style="padding:28px 32px; background:var(--mid); border-left:2px solid var(--orange);">
+        <h4 style="font-family:'Barlow Condensed',sans-serif; font-size:16px; font-weight:700; letter-spacing:1px; margin-bottom:10px;">What time do runs start?</h4>
+        <p style="font-size:14px; font-weight:300; color:var(--muted); line-height:1.75;">Tuesday: 6:00am · Thursday: 6:30am · Sunday: 5:30am. We start on time. Arrive 5 minutes early to sign in and warm up.</p>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:24px;">
+      <div style="padding:28px 32px; background:var(--mid); border-left:2px solid rgba(255,255,255,.1);">
+        <h4 style="font-family:'Barlow Condensed',sans-serif; font-size:16px; font-weight:700; letter-spacing:1px; margin-bottom:10px;">Can I join mid-training cycle?</h4>
+        <p style="font-size:14px; font-weight:300; color:var(--muted); line-height:1.75;">Yes. Group runs are open year-round. Training plans start at set dates — check the Runs page for upcoming start dates.</p>
+      </div>
+      <div style="padding:28px 32px; background:var(--mid); border-left:2px solid rgba(255,255,255,.1);">
+        <h4 style="font-family:'Barlow Condensed',sans-serif; font-size:16px; font-weight:700; letter-spacing:1px; margin-bottom:10px;">Is there a minimum age?</h4>
+        <p style="font-size:14px; font-weight:300; color:var(--muted); line-height:1.75;">Members must be 16 or older. Runners aged 16–18 require parental consent to join official runs.</p>
+      </div>
+      <div style="padding:28px 32px; background:var(--mid); border-left:2px solid rgba(255,255,255,.1);">
+        <h4 style="font-family:'Barlow Condensed',sans-serif; font-size:16px; font-weight:700; letter-spacing:1px; margin-bottom:10px;">How do I reach the coach directly?</h4>
+        <p style="font-size:14px; font-weight:300; color:var(--muted); line-height:1.75;">Coach Arjun is active daily in the member WhatsApp group. You can also speak to him before and after every group run.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <div class="footer__brand-logo"><div class="footer__brand-logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div><div class="footer__brand-logo-text"><span class="fl1">Run Club</span><span class="fl2">NANU NIMMA <span>CK</span></span></div></div>
+      <p class="footer__brand-text">A run club for every pace, every person, every morning. Bengaluru's community of runners since 2019.</p>
+    </div>
+    <div class="footer__col"><h5>Club</h5><ul><li><a href="about-club.html">About the Club</a></li><li><a href="about-coach.html">About the Coach</a></li><li><a href="runs.html">Run Schedule</a></li><li><a href="join.html">Membership</a></li></ul></div>
+    <div class="footer__col"><h5>Training</h5><ul><li><a href="runs.html">Beginner Plans</a></li><li><a href="runs.html">5K to 10K</a></li><li><a href="runs.html">Half Marathon</a></li><li><a href="runs.html">Full Marathon</a></li></ul></div>
+    <div class="footer__col"><h5>Connect</h5><ul><li><a href="#">Instagram</a></li><li><a href="#">Strava Club</a></li><li><a href="#">WhatsApp Group</a></li><li><a href="#">Contact</a></li></ul></div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">© 2026 Nanu Nimma CK Run Club · Bengaluru, India</p>
+    <div class="socials">
+      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg></a>
+      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

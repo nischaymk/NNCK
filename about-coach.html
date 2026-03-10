@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nanu Nimma CK — About the Coach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ── NAV ── -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav__logo"><div class="nav__logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div><div class="nav__logo-text"><span class="line1">RUN CLUB</span><span class="line2">NANU NIMMA <span>CK</span></span></div></a>
+  <ul class="nav__links">
+    <li><a href="index.html" class="nav__link">Home</a></li>
+    <li class="nav__dropdown">
+      <a class="nav__link active" href="#">About <span class="nav__caret">▾</span></a>
+      <div class="nav__dropdown-menu">
+        <a href="about-club.html">About the Club</a>
+        <a href="about-coach.html">About the Coach</a>
+      </div>
+    </li>
+    <li><a href="runs.html" class="nav__link">Runs</a></li>
+    <li><a href="community.html" class="nav__link">Community</a></li>
+  </ul>
+  <a href="join.html" class="nav__join">Join Us</a>
+  <button class="nav__hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav__mobile" id="mobileNav">
+  <a href="index.html">Home</a>
+  <span class="sub-label">About</span>
+  <a href="about-club.html" style="font-size:28px;">About the Club</a>
+  <a href="about-coach.html" style="font-size:28px;">About the Coach</a>
+  <div class="divider"></div>
+  <a href="runs.html">Runs</a>
+  <a href="community.html">Community</a>
+  <a href="join.html" class="mobile-join">Join Us</a>
+</div>
+
+<!-- ── PAGE HERO ── -->
+<section class="page-hero">
+  <div class="page-hero__bg"></div>
+  <div class="page-hero__grid"></div>
+  <div class="page-hero__bar"></div>
+  <div class="page-hero__content">
+    <div class="label">
+      <div class="label__dot"></div>
+      <span class="label__text">About the Coach</span>
+    </div>
+    <h1 class="page-hero__title">MEET THE <span class="accent">COACH</span></h1>
+    <p class="page-hero__sub">The person who gets up earlier than everyone else, so you can run better.</p>
+  </div>
+</section>
+
+<!-- ── COACH PROFILE ── -->
+<section class="section section--dark">
+  <div class="coach-hero-card reveal">
+    <div class="coach-photo-wrap">
+      <div class="coach-photo">
+        <img src="ckprofile.jpeg" alt="Coach Photo" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div class="coach-photo__accent"></div>
+      </div>
+      <div class="coach-credentials">
+        <div class="coach-cred">
+          <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          <span>IAAF Level 2 Athletics Coach</span>
+        </div>
+        <div class="coach-cred">
+          <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          <span>RRCA Certified Running Coach</span>
+        </div>
+        <div class="coach-cred">
+          <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          <span>Sports Nutrition Diploma — ISSA</span>
+        </div>
+        <div class="coach-cred">
+          <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          <span>12× Marathon Finisher (PB: 3:24)</span>
+        </div>
+        <div class="coach-cred">
+          <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          <span>2× Ultra-marathon Finisher</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="coach-info">
+      <div class="coach-name">CHANDRAKANTH<br>M</div>
+      <div class="coach-role">Head Coach & Founder · Nanu Nimma CK Run Club</div>
+      <div class="coach-bio">
+        <p>My name is Chandrakanth. I am a dedicated and passionate athlete and mountaineer with a relentless pursuit of excellence in long-distance athletics. With a burning desire to push the boundaries of my capabilities and achieve greatness, I am an inspiring individual who never gives up. My athletic journey began at the age of 17 when I participated in a college 10km run, eventually progressing to podium finishes in marathons. Currently, I am an enthusiastic ultra-runner. Despite my focus on running, my journey initially involved trekking in the mountains. Additionally, I was a disciplined NCC Cadet, having completed the National Camp in Delhi, one of the toughest obstacle competitions in India where participants represent their states. I have been honored with DG and DDG Commendations from the Honorable DG NCC, Brigadier Purvi Mutt. Over the past six years, my running journey has been a continuous learning experience, propelling me forward as I strive to achieve my goals </p>
+      </div>
+      <div class="coach-stats-row">
+        <div>
+          <div class="coach-stat__num">10+</div>
+          <div class="coach-stat__label">Runners Coached</div>
+        </div>
+        <div>
+          <div class="coach-stat__num">12</div>
+          <div class="coach-stat__label">Marathons Run</div>
+        </div>
+        <div>
+          <div class="coach-stat__num">6yr</div>
+          <div class="coach-stat__label">With the Club</div>
+        </div>
+        <div>
+          <div class="coach-stat__num">2:28</div>
+          <div class="coach-stat__label">Marathon PB</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── COACHING PHILOSOPHY ── -->
+<section class="section section--charcoal">
+  <div class="reveal">
+    <div class="label">
+      <div class="label__dot"></div>
+      <span class="label__text">How CK Coaches</span>
+    </div>
+    <h2 class="section__heading">COACHING <span class="accent">PHILOSOPHY</span></h2>
+  </div>
+
+  <div class="philosophy-cards reveal">
+    <div class="phil-card">
+      <div class="phil-card__num">01</div>
+      <h4>ATHLETE-FIRST</h4>
+      <p>No two runners are alike. Every training plan is adapted to the individual — their life schedule, stress load, sleep, injury history, and goals.</p>
+      <div class="phil-card__bar"></div>
+    </div>
+    <div class="phil-card">
+      <div class="phil-card__num">02</div>
+      <h4>SCIENCE + FEEL</h4>
+      <p>Zone 2 base, periodisation, progressive overload — the fundamentals are non-negotiable. But listening to your body will always overrule a spreadsheet.</p>
+      <div class="phil-card__bar"></div>
+    </div>
+    <div class="phil-card">
+      <div class="phil-card__num">03</div>
+      <h4>PROCESS OVER OUTCOME</h4>
+      <p>Chase the habit, not the PR. When the process is right, the results follow. Arjun trains runners to fall in love with the daily work.</p>
+      <div class="phil-card__bar"></div>
+    </div>
+    <div class="phil-card">
+      <div class="phil-card__num">04</div>
+      <h4>EASY RUNS MATTER</h4>
+      <p>80% of your mileage should feel almost too easy. Most runners go too hard, too often. Arjun is relentless about protecting recovery.</p>
+      <div class="phil-card__bar"></div>
+    </div>
+    <div class="phil-card">
+      <div class="phil-card__num">05</div>
+      <h4>MENTAL EDGE</h4>
+      <p>Race day is 50% physical, 50% mental. Visualisation, race strategy, and managing the inner critic are trained alongside intervals.</p>
+      <div class="phil-card__bar"></div>
+    </div>
+    <div class="phil-card">
+      <div class="phil-card__num">06</div>
+      <h4>COMMUNITY POWER</h4>
+      <p>The best performance enhancer is a training partner who shows up. Arjun builds groups, not just athletes.</p>
+      <div class="phil-card__bar"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHAT TO EXPECT ── -->
+<section class="section section--darker">
+  <div class="reveal">
+    <div class="label">
+      <div class="label__dot"></div>
+      <span class="label__text">Working with Arjun</span>
+    </div>
+    <h2 class="section__heading">WHAT TO <span class="accent">EXPECT</span></h2>
+  </div>
+
+  <div class="about-split reveal" style="margin-top:56px;">
+    <div>
+      <p>When you join Nanu Nimma CK, you get direct access to Arjun through the weekly runs and our club WhatsApp group. He observes your form, adjusts your pace zones, and checks in when you've missed a session.</p>
+      <p>For members on a structured training plan, Arjun provides weekly check-ins, monthly video reviews, and personalised race-day strategy sessions in the two weeks before an event.</p>
+      <p>He's not the type to yell from the sidelines. He's more likely to be running next to you, telling you to slow down — and explaining exactly why that's the fastest way to get faster.</p>
+    </div>
+    <div>
+      <div class="values-grid" style="margin-top:0; grid-template-columns:1fr 1fr;">
+        <div class="value-card">
+          <div class="value-card__num">3×</div>
+          <h4>WEEKLY</h4>
+          <p>Group runs with coach-led warm-ups and briefings.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__num">12</div>
+          <h4>WEEK PLANS</h4>
+          <p>Structured programmes for every race distance.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__num">1:1</div>
+          <h4>ACCESS</h4>
+          <p>Direct coaching support via WhatsApp and run days.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__num">∞</div>
+          <h4>PATIENCE</h4>
+          <p>No question too small. No pace too slow. Ever.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="section section--charcoal" style="text-align:center;">
+  <div class="reveal">
+    <div class="label" style="justify-content:center;">
+      <div class="label__dot"></div>
+      <span class="label__text">Train with Arjun</span>
+    </div>
+    <h2 class="section__heading">READY TO <span class="accent">TRAIN?</span></h2>
+    <p style="margin:24px auto 40px; max-width:420px; font-size:15px; font-weight:300; color:var(--muted); line-height:1.8;">Join a run, say hello, and experience the coaching difference. First run is always free.</p>
+    <a href="join.html" class="btn-primary">Join Nanu Nimma CK Today</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <div class="footer__brand-logo"><div class="footer__brand-logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div><div class="footer__brand-logo-text"><span class="fl1">Run Club</span><span class="fl2">NANU NIMMA <span>CK</span></span></div></div>
+      <p class="footer__brand-text">A run club for every pace, every person, every morning. Bengaluru's community of runners since 2019.</p>
+    </div>
+    <div class="footer__col">
+      <h5>Club</h5>
+      <ul>
+        <li><a href="about-club.html">About the Club</a></li>
+        <li><a href="about-coach.html">About the Coach</a></li>
+        <li><a href="runs.html">Run Schedule</a></li>
+        <li><a href="join.html">Membership</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h5>Training</h5>
+      <ul>
+        <li><a href="runs.html">Beginner Plans</a></li>
+        <li><a href="runs.html">5K to 10K</a></li>
+        <li><a href="runs.html">Half Marathon</a></li>
+        <li><a href="runs.html">Full Marathon</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Strava Club</a></li>
+        <li><a href="#">WhatsApp Group</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">© 2026 Nanu Nimma CK Run Club · Bengaluru, India</p>
+    <div class="socials">
+      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg></a>
+      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

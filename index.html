@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nanu Nimma CK — Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ── NAV ── -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav__logo">
+    <div class="nav__logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div>
+    <div class="nav__logo-text">
+      <span class="line1">RUN CLUB</span>
+      <span class="line2">NANU NIMMA <span>CK</span></span>
+    </div>
+  </a>
+
+  <ul class="nav__links">
+    <li><a href="index.html" class="nav__link active">Home</a></li>
+    <li class="nav__dropdown">
+      <a class="nav__link" href="#">About <span class="nav__caret">▾</span></a>
+      <div class="nav__dropdown-menu">
+        <a href="about-club.html">About the Club</a>
+        <a href="about-coach.html">About the Coach</a>
+      </div>
+    </li>
+    <li><a href="runs.html" class="nav__link">Runs</a></li>
+    <li><a href="community.html" class="nav__link">Community</a></li>
+  </ul>
+
+  <a href="join.html" class="nav__join">Join Us</a>
+  <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="nav__mobile" id="mobileNav">
+  <a href="index.html">Home</a>
+  <span class="sub-label">About</span>
+  <a href="about-club.html" style="font-size:28px;">About the Club</a>
+  <a href="about-coach.html" style="font-size:28px;">About the Coach</a>
+  <div class="divider"></div>
+  <a href="runs.html">Runs</a>
+  <a href="community.html">Community</a>
+  <a href="join.html" class="mobile-join">Join Us</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="home-hero">
+  <div class="home-hero__bg"></div>
+  <div class="home-hero__grid"></div>
+  <div class="home-hero__ticker">RUN · NANU NIMMA CK · PUSH ·</div>
+  <div class="home-hero__track"></div>
+
+  <div class="home-hero__content">
+    <div class="home-hero__eyebrow">
+      <div class="home-hero__eyebrow-line"></div>
+      <span>Est. 2026 · Bengaluru · Nanu Nimma CK</span>
+    </div>
+    <h1 class="home-hero__headline">
+      RUN<br>
+      <span class="line-accent">TOGETHER</span><br>
+      <span class="line-outline">GROW</span>
+      <span class="line-outline">TOGETHER</span>
+    </h1>
+    <p class="home-hero__sub">A community of runners pushing limits, building bonds, and chasing every sunrise — one mile at a time.</p>
+    <div class="home-hero__actions">
+      <a href="join.html" class="btn-primary">Join the Club</a>
+      <a href="runs.html" class="btn-ghost">See Schedule →</a>
+    </div>
+  </div>
+
+  <div class="home-hero__stats">
+    <div class="stat">
+      <div class="stat__num">15<em>+</em></div>
+      <div class="stat__label">Active Members</div>
+    </div>
+    <div class="stat__divider"></div>
+    <div class="stat">
+      <div class="stat__num">3<em>×</em></div>
+      <div class="stat__label">Weekly Runs</div>
+    </div>
+    <div class="stat__divider"></div>
+    <div class="stat">
+      <div class="stat__num">1<em>yr</em></div>
+      <div class="stat__label">Running Together</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MARQUEE ── -->
+<div class="marquee-band">
+  <div class="marquee-band__track">
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Early Morning Runs</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Trail Adventures</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Marathon Training</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Community Runs</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Speed Workouts</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Recovery Jogs</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Race Day Support</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Early Morning Runs</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Trail Adventures</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Marathon Training</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Community Runs</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Speed Workouts</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Recovery Jogs</span></div>
+    <div class="marquee-band__item"><div class="marquee-band__dot"></div><span>Race Day Support</span></div>
+  </div>
+</div>
+
+<!-- ── ABOUT INTRO ── -->
+<section class="section section--dark">
+  <div class="reveal" style="max-width:700px; margin-bottom:60px;">
+    <div class="label">
+      <div class="label__dot"></div>
+      <span class="label__text">Who We Are</span>
+    </div>
+    <h2 class="section__heading">MORE THAN<br>JUST A <span class="accent">RUN</span></h2>
+    <p style="margin-top:28px; font-size:17px; font-weight:300; color:rgba(255,255,255,.55); line-height:1.85;">
+      Nanu Nimma CK Run Club was born out of a simple belief: running is better together. What started as a handful of runners meeting at dawn has grown into one of Bengaluru's most vibrant athletic communities. Every pace, every level, every story — you belong here.
+    </p>
+    <div style="margin-top:36px; display:flex; gap:20px; flex-wrap:wrap;">
+      <a href="about-club.html" class="btn-primary">Our Story</a>
+      <a href="about-coach.html" class="btn-outline">Meet the Coach</a>
+    </div>
+  </div>
+
+  <!-- Bento -->
+  <div class="bento reveal">
+    <div class="bento-card bento-c1">
+      <div class="bento-card__icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      </div>
+      <h3>CONSISTENCY<br>OVER INTENSITY</h3>
+      <p>The secret isn't one heroic effort — it's showing up, day after day. We build habits that last a lifetime, not just a season.</p>
+      <div class="bento-card__bar"></div>
+    </div>
+    <div class="bento-card bento-c2">
+      <div class="big-num">0</div>
+      <div class="big-num-label">Egos Allowed</div>
+      <p style="margin-top:14px;">Every runner is equal on the road. Leave the rankings at home.</p>
+      <div class="bento-card__bar"></div>
+    </div>
+    <div class="bento-card bento-c3">
+      <div class="big-num">∞</div>
+      <div class="big-num-label">Possibilities ahead</div>
+      <div class="bento-card__bar"></div>
+    </div>
+    <div class="bento-card bento-c4">
+      <div class="bento-card__icon">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <h3>BUILT ON<br>COMMUNITY</h3>
+      <p>Some of our members' closest friendships started on a long run. When you run with Nanu Nimma CK, you gain a tribe that shows up for each other on and off the road.</p>
+      <div class="bento-card__bar"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── QUICK LINKS ── -->
+<section class="section section--charcoal" style="padding-top:0;">
+  <div class="quick-links reveal">
+    <a href="runs.html" class="quick-link-card">
+      <div class="quick-link-card__num">01</div>
+      <div>
+        <div class="quick-link-card__tag">Weekly Schedule</div>
+        <div class="quick-link-card__title">FIND YOUR RUN</div>
+        <p class="quick-link-card__desc">Three runs a week, different routes, one community.</p>
+      </div>
+      <div class="quick-link-card__arrow">
+        Explore <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+    <a href="community.html" class="quick-link-card">
+      <div class="quick-link-card__num">02</div>
+      <div>
+        <div class="quick-link-card__tag">Events & Stories</div>
+        <div class="quick-link-card__title">THE COMMUNITY</div>
+        <p class="quick-link-card__desc">Races, trail runs, socials and hundreds of personal bests.</p>
+      </div>
+      <div class="quick-link-card__arrow">
+        Explore <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+    <a href="join.html" class="quick-link-card">
+      <div class="quick-link-card__num">03</div>
+      <div>
+        <div class="quick-link-card__tag">Get Started</div>
+        <div class="quick-link-card__title">JOIN US TODAY</div>
+        <p class="quick-link-card__desc">Your first run is free. No pace requirement. Just show up.</p>
+      </div>
+      <div class="quick-link-card__arrow">
+        Register <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <div class="footer__brand-logo">
+        <div class="footer__brand-logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div>
+        <div class="footer__brand-logo-text">
+          <span class="fl1">Run Club</span>
+          <span class="fl2">NANU NIMMA <span>CK</span></span>
+        </div>
+      </div>
+      <p class="footer__brand-text">A run club for every pace, every person, every morning. Bengaluru's community of runners since 2019.</p>
+    </div>
+    <div class="footer__col">
+      <h5>Club</h5>
+      <ul>
+        <li><a href="about-club.html">About the Club</a></li>
+        <li><a href="about-coach.html">About the Coach</a></li>
+        <li><a href="runs.html">Run Schedule</a></li>
+        <li><a href="join.html">Membership</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h5>Training</h5>
+      <ul>
+        <li><a href="runs.html">Beginner Plans</a></li>
+        <li><a href="runs.html">5K to 10K</a></li>
+        <li><a href="runs.html">Half Marathon</a></li>
+        <li><a href="runs.html">Full Marathon</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Strava Club</a></li>
+        <li><a href="#">WhatsApp Group</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">© 2026 Nanu Nimma CK Run Club · Bengaluru, India</p>
+    <div class="socials">
+      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg></a>
+      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
