@@ -7,6 +7,76 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+  /* Bio justified text */
+  .coach-bio p {
+    text-align: justify;
+    hyphens: auto;
+    line-height: 1.9;
+  }
+  /* Orange highlight — achievements, key terms */
+  .hl-orange {
+    color: var(--orange);
+    font-weight: 500;
+  }
+  /* Subtle white highlight — proper nouns, places */
+  .hl-white {
+    color: rgba(255,255,255,.95);
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255,69,0,.45);
+    padding-bottom: 1px;
+  }
+  /* Philosophy quote pull-out */
+  .bio-quote {
+    display: block;
+    margin: 18px 0;
+    padding: 14px 22px;
+    border-left: 3px solid var(--orange);
+    background: rgba(255,69,0,.06);
+    font-style: italic;
+    font-size: 14.5px;
+    color: rgba(255,255,255,.8);
+    line-height: 1.75;
+  }
+  .bio-quote strong {
+    color: var(--orange);
+    font-style: normal;
+    font-weight: 600;
+  }
+  /* Cert inline list */
+  .bio-certs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 0 14px 0;
+    padding-left: 4px;
+  }
+  .bio-certs li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: rgba(255,255,255,.65);
+    font-weight: 300;
+    list-style: none;
+  }
+  .bio-certs li::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--orange);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  /* Sign-off */
+  .bio-signoff {
+    display: block;
+    margin-top: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 19px;
+    letter-spacing: 3px;
+    color: var(--orange);
+  }
+</style>
 </head>
 <body>
 
@@ -25,8 +95,9 @@
         <a href="about-coach.html">About the Coach</a>
       </div>
     </li>
-    <li><a href="runs.html" class="nav__link">Runs</a></li>
+    <li><a href="runs.html" class="nav__link">Training</a></li>
     <li><a href="community.html" class="nav__link">Community</a></li>
+    <li><a href="events.html" class="nav__link">Events</a></li>
   </ul>
   <a href="join.html" class="nav__join">Join Us</a>
   <button class="nav__hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -37,8 +108,9 @@
   <a href="about-club.html" style="font-size:28px;">About the Club</a>
   <a href="about-coach.html" style="font-size:28px;">About the Coach</a>
   <div class="divider"></div>
-  <a href="runs.html">Runs</a>
+  <a href="runs.html">Training</a>
   <a href="community.html">Community</a>
+  <a href="events.html">Events</a>
   <a href="join.html" class="mobile-join">Join Us</a>
 </div>
 
@@ -53,6 +125,7 @@
       <span class="label__text">About the Coach</span>
     </div>
     <h1 class="page-hero__title">MEET THE <span class="accent">COACH</span></h1>
+    <h1>NANU NIMMA <span class="accent">CK</span></h1>
     <p class="page-hero__sub">The person who gets up earlier than everyone else, so you can run better.</p>
   </div>
 </section>
@@ -68,32 +141,52 @@
       <div class="coach-credentials">
         <div class="coach-cred">
           <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-          <span>IAAF Level 2 Athletics Coach</span>
+          <span>ACSM CERTIFIED</span>
         </div>
         <div class="coach-cred">
           <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-          <span>RRCA Certified Running Coach</span>
+          <span>PUMA SPONSORED ATHLETE</span>
         </div>
         <div class="coach-cred">
           <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-          <span>Sports Nutrition Diploma — ISSA</span>
+          <span>NATIONAL MARATHON WINNER</span>
         </div>
         <div class="coach-cred">
           <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-          <span>12× Marathon Finisher (PB: 3:24)</span>
+          <span>PROCLAM SLAM ALL INDIA 2ND PLACE</span>
         </div>
         <div class="coach-cred">
           <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-          <span>2× Ultra-marathon Finisher</span>
+          <span>AFI PRE L1</span>
         </div>
       </div>
     </div>
 
     <div class="coach-info">
-      <div class="coach-name">CHANDRAKANTH<br>M</div>
+      <div class="coach-name">CHANDRAKANTH M</div>
       <div class="coach-role">Head Coach & Founder · Nanu Nimma CK Run Club</div>
       <div class="coach-bio">
-        <p>My name is Chandrakanth. I am a dedicated and passionate athlete and mountaineer with a relentless pursuit of excellence in long-distance athletics. With a burning desire to push the boundaries of my capabilities and achieve greatness, I am an inspiring individual who never gives up. My athletic journey began at the age of 17 when I participated in a college 10km run, eventually progressing to podium finishes in marathons. Currently, I am an enthusiastic ultra-runner. Despite my focus on running, my journey initially involved trekking in the mountains. Additionally, I was a disciplined NCC Cadet, having completed the National Camp in Delhi, one of the toughest obstacle competitions in India where participants represent their states. I have been honored with DG and DDG Commendations from the Honorable DG NCC, Brigadier Purvi Mutt. Over the past six years, my running journey has been a continuous learning experience, propelling me forward as I strive to achieve my goals </p>
+
+        <p><span class="hl-white">Nanu Nimma CK</span> is both a <span class="hl-orange">competitive runner</span> and a <span class="hl-orange">running coach</span> based in <span class="hl-white">Bengaluru</span>. His journey began as an athlete, and through years of <span class="hl-white">consistent training and racing</span>, he developed a deep understanding of what it takes to improve as a runner.</p>
+
+        <p>Before becoming a coach, he first built his foundation as a runner, achieving strong performances including a <span class="hl-orange">sub-2:30 marathon</span> and <span class="hl-orange">sub-72-minute half marathon</span>. These experiences shape the way he approaches coaching today.</p>
+
+        <span class="bio-quote"><strong>"Athlete first. Winning comes second."</strong> His focus is not only on results but on helping runners develop <strong>discipline</strong>, <strong>consistency</strong>, and a <strong>long-term approach</strong> to training.</span>
+
+        <p>Along with his competitive experience, he holds certifications including:</p>
+        <ul class="bio-certs">
+          <li><span class="hl-white">ACSM Certified</span></li>
+          <li><span class="hl-white">AFI Pre-Level 1</span></li>
+        </ul>
+
+        <p>What makes his coaching unique is the balance between <span class="hl-white">scientific knowledge</span> and <span class="hl-white">real racing experience</span>. Having trained as a <span class="hl-orange">competitive athlete</span> himself, he understands the demands of structured running training.</p>
+
+        <p>As a <span class="hl-white">Physical Education teacher</span>, he also understands the challenges faced by <span class="hl-white">working professionals</span> who want to pursue running seriously while managing their daily responsibilities.</p>
+
+        <p>Through <span class="hl-orange">Run With Nimma CK</span>, his goal is to build a strong <span class="hl-white">running community</span> where athletes train together, support each other, and continue improving — step by step.</p>
+
+        <span class="bio-signoff">Run Together. Grow Together.</span>
+
       </div>
       <div class="coach-stats-row">
         <div>
@@ -172,15 +265,15 @@
   <div class="reveal">
     <div class="label">
       <div class="label__dot"></div>
-      <span class="label__text">Working with Arjun</span>
+      <span class="label__text">Working with CK</span>
     </div>
     <h2 class="section__heading">WHAT TO <span class="accent">EXPECT</span></h2>
   </div>
 
   <div class="about-split reveal" style="margin-top:56px;">
     <div>
-      <p>When you join Nanu Nimma CK, you get direct access to Arjun through the weekly runs and our club WhatsApp group. He observes your form, adjusts your pace zones, and checks in when you've missed a session.</p>
-      <p>For members on a structured training plan, Arjun provides weekly check-ins, monthly video reviews, and personalised race-day strategy sessions in the two weeks before an event.</p>
+      <p>When you join Nanu Nimma CK, you get direct access to Chandrakanth through the weekly runs and our club WhatsApp group. He observes your form, adjusts your pace zones, and checks in when you've missed a session.</p>
+      <p>For members on a structured training plan, Chandrakanth provides weekly check-ins, monthly video reviews, and personalised race-day strategy sessions in the two weeks before an event.</p>
       <p>He's not the type to yell from the sidelines. He's more likely to be running next to you, telling you to slow down — and explaining exactly why that's the fastest way to get faster.</p>
     </div>
     <div>
@@ -228,7 +321,7 @@
   <div class="footer__top">
     <div class="footer__brand">
       <div class="footer__brand-logo"><div class="footer__brand-logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div><div class="footer__brand-logo-text"><span class="fl1">Run Club</span><span class="fl2">NANU NIMMA <span>CK</span></span></div></div>
-      <p class="footer__brand-text">A run club for every pace, every person, every morning. Bengaluru's community of runners since 2019.</p>
+      <p class="footer__brand-text">A run club for every pace, every person, every morning. Bengaluru's community of runners since 2025.</p>
     </div>
     <div class="footer__col">
       <h5>Club</h5>

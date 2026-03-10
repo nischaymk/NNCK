@@ -694,7 +694,148 @@ button { cursor: none; }
   background: rgba(255,255,255,.07);
 }
 
-/* ─── HOME — BENTO ──────────────────────────────────────── */
+/* ─── ABOUT GALLERY LAYOUT ──────────────────────────────── */
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.gallery-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: var(--charcoal);
+}
+.gallery-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--orange);
+  z-index: 3;
+}
+.gallery-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 60px; height: 60px;
+  background: var(--orange);
+  z-index: 3;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+.gallery-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity .8s ease;
+  z-index: 1;
+}
+.gallery-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+.gallery-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+/* Counter badge */
+.gallery-counter {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 4;
+  background: rgba(0,0,0,.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,.1);
+  padding: 6px 14px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+.gallery-counter em {
+  color: var(--orange);
+  font-style: normal;
+}
+/* Dot indicators */
+.gallery-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: flex;
+  gap: 8px;
+}
+.gallery-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.3);
+  cursor: pointer;
+  transition: background .3s, transform .3s;
+  border: none;
+  padding: 0;
+}
+.gallery-dot.active {
+  background: var(--orange);
+  transform: scale(1.4);
+}
+/* Prev / Next arrows */
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  width: 38px;
+  height: 38px;
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background .3s, border-color .3s;
+}
+.gallery-btn:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+}
+.gallery-btn svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--white);
+  fill: none;
+  stroke-width: 2;
+}
+.gallery-btn--prev { left: 12px; }
+.gallery-btn--next { right: 12px; }
+/* Progress bar */
+.gallery-progress {
+  position: absolute;
+  bottom: 0; left: 0;
+  height: 3px;
+  background: var(--orange);
+  z-index: 4;
+  width: 0%;
+  transition: width linear;
+}
+
+@media (max-width: 1024px) {
+  .about-intro-grid { grid-template-columns: 1fr; gap: 48px; }
+}
+@media (max-width: 768px) {
+  .about-intro-grid { grid-template-columns: 1fr; gap: 36px; }
+  .gallery-wrap { aspect-ratio: 16/10; }
+}
 .bento {
   display: grid;
   grid-template-columns: repeat(12,1fr);
@@ -1227,7 +1368,150 @@ button { cursor: none; }
 }
 .phil-card:hover .phil-card__bar { opacity: 1; }
 
-/* ─── COMMUNITY PAGE ────────────────────────────────────── */
+/* ─── RUNNER PROFILE CARDS ──────────────────────────────── */
+.runner-profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  margin-top: 60px;
+}
+.runner-card {
+  background: var(--charcoal);
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+  transition: background .3s, transform .3s;
+  display: flex;
+  flex-direction: column;
+}
+.runner-card:hover { background: #1c1c1c; transform: translateY(-4px); }
+.runner-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--orange), transparent);
+  opacity: 0;
+  transition: opacity .3s;
+}
+.runner-card:hover::after { opacity: 1; }
+
+/* Profile image at top */
+.runner-card__img-wrap {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  position: relative;
+  background: var(--mid);
+  flex-shrink: 0;
+}
+.runner-card__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform .5s ease;
+}
+.runner-card:hover .runner-card__img-wrap img { transform: scale(1.05); }
+
+/* Orange overlay on hover */
+.runner-card__img-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,.7) 100%);
+}
+
+/* PB badge — sits over image bottom */
+.runner-card__pb-badge {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  z-index: 2;
+  background: var(--orange);
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.runner-card__pb-time {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  color: var(--dark);
+  line-height: 1;
+}
+.runner-card__pb-race {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,.65);
+  text-align: right;
+  line-height: 1.3;
+}
+.runner-card__pb-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,.5);
+  display: block;
+}
+
+/* Body */
+.runner-card__body {
+  padding: 24px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.runner-card__name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.runner-card__since {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-top: -4px;
+}
+.runner-card__review {
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(255,255,255,.6);
+  line-height: 1.75;
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding-top: 12px;
+  margin-top: 4px;
+}
+.runner-card__review::before {
+  content: '" ';
+  color: var(--orange);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+}
+.runner-card__review::after {
+  content: ' "';
+  color: var(--orange);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .runner-profiles-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .runner-profiles-grid { grid-template-columns: 1fr 1fr; gap: 2px; }
+  .runner-card__pb-time { font-size: 20px; }
+}
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
