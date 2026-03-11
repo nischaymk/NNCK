@@ -2584,3 +2584,104 @@ button { cursor: none; }
   .popup__left { min-height: 220px; padding: 32px 22px; }
   .popup__right { padding: 28px 22px; }
 }
+
+/* ─── TRAINING LOCATIONS ─────────────────────────────────── */
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+.location-card {
+  background: var(--mid);
+  padding: 48px 44px;
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+  transition: background .3s;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.location-card:hover { background: #252525; }
+
+/* Day badges */
+.location-card__days {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.location-card__days span {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: var(--orange);
+  padding: 5px 14px;
+}
+.location-card__days span:nth-child(2) {
+  background: transparent;
+  color: var(--muted);
+  padding: 5px 0;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+/* Body */
+.location-card__body {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.location-card__icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255,69,0,.1);
+  border: 1px solid rgba(255,69,0,.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.location-card__icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--orange);
+}
+.location-card__name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 1.05;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.location-card__address {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Bottom accent bar */
+.location-card__bar {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--orange), transparent);
+  opacity: 0;
+  transition: opacity .3s;
+}
+.location-card:hover .location-card__bar { opacity: 1; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .location-grid { grid-template-columns: 1fr; }
+  .location-card { padding: 36px 28px; }
+  .location-card__name { font-size: 26px; }
+}
