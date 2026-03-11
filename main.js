@@ -256,7 +256,7 @@
   }
 
   // First appearance — after 15 seconds
-  setTimeout(showPopup, 15000);
+  setTimeout(showPopup, 45000);
 
   // Re-appear every 15 seconds after closing
   overlay.addEventListener('transitionend', () => {
