@@ -9,3 +9,18 @@
   <url><loc>https://nanunimmack.fit/achievements.html</loc></url>
   <url><loc>https://nanunimmack.fit/join.html</loc></url>
 </urlset>
+```
+
+**3. Test it in your browser first**
+Open this URL directly in your browser:
+```
+https://nanunimmack.fit/sitemap.xml
+```
+- If it **shows the XML** → Google can reach it, just wait 24–48 hrs and resubmit
+- If it shows a **404 error** → the file isn't deployed yet, push it again to GitHub
+
+**4. Check your `robots.txt`** — make sure it's also in root and contains:
+```
+User-agent: *
+Allow: /
+Sitemap: https://nanunimmack.fit/sitemap.xml
