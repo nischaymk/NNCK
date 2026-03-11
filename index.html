@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <style>
   /* Bio justified text */
   .coach-bio p {
@@ -79,6 +80,87 @@
     color: var(--orange);
   }
 </style>
+
+<!-- ── JOIN POPUP ── -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup">
+    <button class="popup__close" id="popupClose" aria-label="Close">
+      <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+
+    <!-- Left: CTA -->
+    <div class="popup__left">
+      <div class="popup__bg"></div>
+      <div class="popup__grid"></div>
+      <div class="popup__content">
+        <div class="label" style="margin-bottom:16px;">
+          <div class="label__dot"></div>
+          <span class="label__text">Run With Us</span>
+        </div>
+        <h2 class="popup__heading">JOIN <span>NANU<br>NIMMA CK</span></h2>
+        <p class="popup__sub">No pace requirement. Just show up and lace up. Bengaluru's most welcoming run community.</p>
+        <a href="join.html" class="popup__cta">
+          Join Us Today
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Contact -->
+    <div class="popup__right">
+      <div class="popup__tag">Get In Touch</div>
+      <h3 class="popup__contact-heading">REACH <span>US</span></h3>
+      <p class="popup__contact-sub">Have questions? We're always happy to help you get started.</p>
+
+      <div class="popup__contacts">
+        <a href="tel:+917892123509" class="popup__contact-item">
+          <div class="popup__contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012.03 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+          </div>
+          <div class="popup__contact-info">
+            <span class="popup__contact-label">Phone / WhatsApp</span>
+            <span class="popup__contact-val">+91 78921 23509</span>
+          </div>
+        </a>
+
+        <a href="mailto:nanunimmack@gmail.com" class="popup__contact-item">
+          <div class="popup__contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="popup__contact-info">
+            <span class="popup__contact-label">Email Us</span>
+            <span class="popup__contact-val">nanunimmack@gmail.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/ck_runner198?igsh=MWJ4cGlnZDIwdWhmbg==" target="_blank" rel="noopener" class="popup__contact-item">
+          <div class="popup__contact-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+          </div>
+          <div class="popup__contact-info">
+            <span class="popup__contact-label">Instagram</span>
+            <span class="popup__contact-val">@ck_runner198</span>
+          </div>
+        </a>
+
+        <a href="https://wa.me/917892123509" target="_blank" rel="noopener" class="popup__contact-item">
+          <div class="popup__contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+          </div>
+          <div class="popup__contact-info">
+            <span class="popup__contact-label">WhatsApp Group</span>
+            <span class="popup__contact-val">Tap to Join the Group</span>
+          </div>
+        </a>
+      </div>
+
+      <p class="popup__dismiss" id="popupDismiss">Don't show again &nbsp;·&nbsp; <span id="popupSnooze">Remind me later</span></p>
+    </div>
+  </div>
+</div>
+
+
+
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
@@ -91,7 +173,6 @@
       <span class="line1">RUN CLUB</span>
     </div>
   </a>
-
   <ul class="nav__links">
     <li><a href="index.html" class="nav__link active">Home</a></li>
     <li class="nav__dropdown">
@@ -104,8 +185,8 @@
     <li><a href="runs.html" class="nav__link">Training</a></li>
     <li><a href="community.html" class="nav__link">Community</a></li>
     <li><a href="events.html" class="nav__link">Events</a></li>
+    <li><a href="achievements.html" class="nav__link">Achievements</a></li>
   </ul>
-
   <a href="join.html" class="nav__join">Join Us</a>
   <button class="nav__hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -122,6 +203,7 @@
   <a href="runs.html">Training</a>
   <a href="community.html">Community</a>
   <a href="events.html">Events</a>
+  <a href="achievements.html">Achievements</a>
   <a href="join.html" class="mobile-join">Join Us</a>
 </div>
 
@@ -393,17 +475,17 @@
   </div>
 </section>
 
-
+<br>
 
 <!-- ── QUICK LINKS ── -->
 <section class="section section--charcoal" style="padding-top:0;">
   <div class="quick-links reveal">
-    <a href="runs.html" class="quick-link-card">
+    <a href="achievements.html" class="quick-link-card">
       <div class="quick-link-card__num">01</div>
       <div>
-        <div class="quick-link-card__tag">Weekly Schedule</div>
+        <div class="quick-link-card__tag">Milestones & Glories</div>
         <div class="quick-link-card__title">Achievements </div>
-        <p class="quick-link-card__desc">Three runs a week, different routes, one community.</p>
+        <p class="quick-link-card__desc">Have a look on our achievements and milestones.</p>
       </div>
       <div class="quick-link-card__arrow">
         Explore <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -438,13 +520,7 @@
 <footer class="footer">
   <div class="footer__top">
     <div class="footer__brand">
-      <div class="footer__brand-logo">
-        <div class="footer__brand-logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div>
-        <div class="footer__brand-logo-text">
-          <span class="fl1">Run Club</span>
-          <span class="fl2">NANU NIMMA <span>CK</span></span>
-        </div>
-      </div>
+      <div class="footer__brand-logo"><div class="footer__brand-logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div><div class="footer__brand-logo-text"><span class="fl2">NANU NIMMA <span>CK</span></span><span class="fl1">Run Club</span></div></div>
       <p class="footer__brand-text">A run club for every pace, every person, every morning. Bengaluru's community of runners since 2024.</p>
     </div>
     <div class="footer__col">
@@ -468,19 +544,26 @@
     <div class="footer__col">
       <h5>Connect</h5>
       <ul>
-        <li><a href="#">Instagram</a></li>
+        <li><a href="https://www.instagram.com/ck_runner198?igsh=MWJ4cGlnZDIwdWhmbg==" target="_blank" rel="noopener">Instagram</a></li>
         <li><a href="#">Strava Club</a></li>
-        <li><a href="#">WhatsApp Group</a></li>
+        <li><a href="https://wa.me/917892123509" target="_blank" rel="noopener">WhatsApp Group</a></li>
         <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h5>Contact Us</h5>
+      <ul>
+        <li><a href="tel:+917892123509">📞 +91 78921 23509</a></li>
+        <li><a href="mailto:nanunimmack@gmail.com">✉️ nanunimmack@gmail.com</a></li>
       </ul>
     </div>
   </div>
   <div class="footer__bottom">
     <p class="footer__copy">© 2024 Nanu Nimma CK Run Club · Bengaluru, India</p>
     <div class="socials">
-      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg></a>
+      <a href="https://www.instagram.com/ck_runner198?igsh=MWJ4cGlnZDIwdWhmbg==" target="_blank" rel="noopener" class="social-btn"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg></a>
       <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
-      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+      <a href="https://wa.me/917892123509" target="_blank" rel="noopener" class="social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
     </div>
   </div>
 </footer>

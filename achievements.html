@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Achievements — Nanu Nimma CK Run Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ── NAV ── -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav__logo">
+    <div class="nav__logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div>
+    <div class="nav__logo-text">
+      <span class="line2">NANU NIMMA <span>CK</span></span>
+      <span class="line1">RUN CLUB</span>
+    </div>
+  </a>
+  <ul class="nav__links">
+    <li><a href="index.html" class="nav__link">Home</a></li>
+    <li class="nav__dropdown">
+      <a class="nav__link" href="#">About <span class="nav__caret">▾</span></a>
+      <div class="nav__dropdown-menu">
+        <a href="about-club.html">About the Club</a>
+        <a href="about-coach.html">About the Coach</a>
+      </div>
+    </li>
+    <li><a href="runs.html" class="nav__link">Training</a></li>
+    <li><a href="community.html" class="nav__link">Community</a></li>
+    <li><a href="events.html" class="nav__link">Events</a></li>
+    <li><a href="achievements.html" class="nav__link active">Achievements</a></li>
+  </ul>
+  <a href="join.html" class="nav__join">Join Us</a>
+  <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="nav__mobile" id="mobileNav">
+  <a href="index.html">Home</a>
+  <span class="sub-label">About</span>
+  <a href="about-club.html" style="font-size:28px;">About the Club</a>
+  <a href="about-coach.html" style="font-size:28px;">About the Coach</a>
+  <div class="divider"></div>
+  <a href="runs.html">Training</a>
+  <a href="community.html">Community</a>
+  <a href="events.html">Events</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="join.html" class="mobile-join">Join Us</a>
+</div>
+
+<!-- ── PAGE HERO ── -->
+<section class="page-hero">
+  <div class="page-hero__bg"></div>
+  <div class="page-hero__grid"></div>
+  <div class="page-hero__bar"></div>
+  <div class="page-hero__content">
+    <div class="label">
+      <div class="label__dot"></div>
+      <span class="label__text">Our Pride</span>
+    </div>
+    <h1 class="page-hero__title">RACE <span class="accent">ACHIEVEMENTS</span></h1>
+    <p class="page-hero__sub">Every podium. Every finish line. Every personal best that pushed us further.</p>
+  </div>
+</section>
+
+<!-- ── STATS STRIP ── -->
+<div class="ach-stats-strip">
+  <div class="ach-stat">
+    <div class="ach-stat__num">25<em>+</em></div>
+    <div class="ach-stat__label">Races Completed</div>
+  </div>
+  <div class="ach-stat__divider"></div>
+  <div class="ach-stat">
+    <div class="ach-stat__num">18<em>+</em></div>
+    <div class="ach-stat__label">Podium Finishes</div>
+  </div>
+  <div class="ach-stat__divider"></div>
+  <div class="ach-stat">
+    <div class="ach-stat__num">5<em>+</em></div>
+    <div class="ach-stat__label">Event Categories</div>
+  </div>
+  <div class="ach-stat__divider"></div>
+  <div class="ach-stat">
+    <div class="ach-stat__num">8+<em>+</em></div>
+    <div class="ach-stat__label">Runners Represented</div>
+  </div>
+</div>
+
+<!-- ── FILTER BAR ── -->
+<section class="section section--dark" style="padding-top:60px; padding-bottom:0;">
+  <div class="ach-filter-bar reveal">
+    <button class="ach-filter-btn active" data-filter="all">All</button>
+    <button class="ach-filter-btn" data-filter="marathon">Marathon</button>
+    <button class="ach-filter-btn" data-filter="halfmarathon">Half Marathon</button>
+    <button class="ach-filter-btn" data-filter="10k">10K</button>
+    <button class="ach-filter-btn" data-filter="5k">5K</button>
+    <button class="ach-filter-btn" data-filter="trail">Trail</button>
+  </div>
+</section>
+
+<!-- ── ACHIEVEMENTS GRID ── -->
+<section class="section section--dark" style="padding-top:48px;">
+  <div class="ach-grid reveal" id="achGrid">
+
+    <!-- ── CARD 1 ── -->
+    <div class="ach-card" data-type="marathon">
+      <div class="ach-card__img-wrap">
+        <img src="mahethon.jpeg" alt="Event Photo">
+        <div class="ach-card__position gold">
+          <span class="ach-card__pos-num">1<sup>st</sup></span>
+          <span class="ach-card__pos-label">Age Group</span>
+        </div>
+        <div class="ach-card__type-tag">10KM</div>
+      </div>
+      <div class="ach-card__body">
+        <div class="ach-card__event-name">Mahethon 2026</div>
+        <div class="ach-card__runner">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Rajesh SN
+        </div>
+        <div class="ach-card__meta">
+          <div class="ach-card__meta-item">
+            <span class="ach-card__meta-label">Event Type</span>
+            <span class="ach-card__meta-val">10K Road Race</span>
+          </div>
+          <div class="ach-card__meta-item">
+            <span class="ach-card__meta-label">Position</span>
+            <span class="ach-card__meta-val gold-text">🥇 1st Place — Age Group</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CARD 2 ── -->
+    <div class="ach-card" data-type="halfmarathon">
+      <div class="ach-card__img-wrap">
+        <img src="wipro.jpeg" alt="Event Photo">
+        <div class="ach-card__position silver">
+          <span class="ach-card__pos-num">3<sup>rd</sup></span>
+          <span class="ach-card__pos-label">Age Group</span>
+        </div>
+        <div class="ach-card__type-tag">Half Marathon</div>
+      </div>
+      <div class="ach-card__body">
+        <div class="ach-card__event-name">WIPRO MARATHON 2025 — HM Category</div>
+        <div class="ach-card__runner">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+         Rajesh S N
+        </div>
+        <div class="ach-card__meta">
+          <div class="ach-card__meta-item">
+            <span class="ach-card__meta-label">Event Type</span>
+            <span class="ach-card__meta-val">Half Marathon · 21.1 KM</span>
+          </div>
+          <div class="ach-card__meta-item">
+            <span class="ach-card__meta-label">Position</span>
+            <span class="ach-card__meta-val bronze-text">🥉 3rd Place — Age Group</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CARD 3 ── -->
+    <div class="ach-card" data-type="10k">
+      <div class="ach-card__img-wrap">
+        <img src="decathlon.jpeg" alt="Event Photo">
+        <div class="ach-card__position bronze">
+          <span class="ach-card__pos-num">3<sup>rd</sup></span>
+          <span class="ach-card__pos-label">Overall</span>
+        </div>
+        <div class="ach-card__type-tag">5K</div>
+      </div>
+      <div class="ach-card__body">
+        <div class="ach-card__event-name">Decathlon 5k Run 2025</div>
+        <div class="ach-card__runner">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Rajesh S N 
+        </div>
+        <div class="ach-card__meta">
+          <div class="ach-card__meta-item">
+            <span class="ach-card__meta-label">Event Type</span>
+            <span class="ach-card__meta-val">5K Road Race</span>
+          </div>
+          <div class="ach-card__meta-item">
+            <span class="ach-card__meta-label">Position</span>
+            <span class="ach-card__meta-val bronze-text">🥉 3rd Place — Overall</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ── CARD 4 ── -->
+    <div class="ach-card" data-type="10k">
+      <div class="ach-card__img-wrap">
+        <img src="jit.jpeg" alt="Event Photo">
+        <div class="ach-card__position bronze">
+          <span class="ach-card__pos-num">3<sup>rd</sup></span>
+          <span class="ach-card__pos-label">Overall</span>
+        </div>
+        <div class="ach-card__type-tag">5K</div>
+      </div>
+      <div class="ach-card__body">
+        <div class="ach-card__event-name">JIT Cross Country</div>
+        <div class="ach-card__runner">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Rajesh S N 
+        </div>
+        <div class="ach-card__meta">
+          <div class="ach-card__meta-item">
+            <span class="ach-card__meta-label">Event Type</span>
+            <span class="ach-card__meta-val">5K Road Race</span>
+          </div>
+          <div class="ach-card__meta-item">
+            <span class="ach-card__meta-label">Position</span>
+            <span class="ach-card__meta-val bronze-text">🥉 3rd Place — Overall</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ── CARD 5 ── -->
+    <div class="ach-card" data-type="10k">
+      <div class="ach-card__img-wrap">
+        <img src="greenrun.jpeg" alt="Event Photo">
+        <div class="ach-card__position gold">
+          <span class="ach-card__pos-num">1<sup>st</sup></span>
+          <span class="ach-card__pos-label">Overall</span>
+        </div>
+        <div class="ach-card__type-tag">7K</div>
+      </div>
+      <div class="ach-card__body">
+        <div class="ach-card__event-name">Christ Academy's Green Run 2025</div>
+        <div class="ach-card__runner">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Rajesh S N 
+        </div>
+        <div class="ach-card__meta">
+          <div class="ach-card__meta-item">
+            <span class="ach-card__meta-label">Event Type</span>
+            <span class="ach-card__meta-val">7K Road Race</span>
+          </div>
+          <div class="ach-card__meta-item">
+            <span class="ach-card__meta-label">Position</span>
+            <span class="ach-card__meta-val gold-text">🥇 1st Place — Overall</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ── CARD 6 ── -->
+    <div class="ach-card" data-type="10k">
+      <div class="ach-card__img-wrap">
+        <img src="bu.png" alt="Event Photo">
+        <div class="ach-card__position bronze">
+          <span class="ach-card__pos-num">3<sup>rd</sup></span>
+          <span class="ach-card__pos-label">Overall</span>
+        </div>
+        <div class="ach-card__type-tag">10K</div>
+      </div>
+      <div class="ach-card__body">
+        <div class="ach-card__event-name">Bangalore University 10K Race</div>
+        <div class="ach-card__runner">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Rajesh S N 
+        </div>
+        <div class="ach-card__meta">
+          <div class="ach-card__meta-item">
+            <span class="ach-card__meta-label">Event Type</span>
+            <span class="ach-card__meta-val">10K Track Race</span>
+          </div>
+          <div class="ach-card__meta-item">
+            <span class="ach-card__meta-label">Position</span>
+            <span class="ach-card__meta-val bronze-text">🥉 3rd Place — Overall</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+  </div><!-- /ach-grid -->
+
+  <!-- Empty state (shown when filter returns nothing) -->
+  <div class="ach-empty" id="achEmpty" style="display:none;">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+    <p>No achievements in this category yet — but we're racing!</p>
+  </div>
+
+</section>
+
+<!-- ── CTA ── -->
+<section class="section section--charcoal" style="text-align:center;">
+  <div class="reveal">
+    <div class="label" style="justify-content:center;">
+      <div class="label__dot"></div>
+      <span class="label__text">Be Part of the Story</span>
+    </div>
+    <h2 class="section__heading">YOUR <span class="accent">WIN</span> NEXT</h2>
+    <p style="margin:24px auto 40px; max-width:420px; font-size:15px; font-weight:300; color:var(--muted); line-height:1.8;">Train with us and add your name to this wall of achievements.</p>
+    <a href="join.html" class="btn-primary">Join Nanu Nimma CK Today</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <div class="footer__brand-logo">
+        <div class="footer__brand-logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div>
+        <div class="footer__brand-logo-text">
+          <span class="fl2">NANU NIMMA <span>CK</span></span>
+          <span class="fl1">Run Club</span>
+        </div>
+      </div>
+      <p class="footer__brand-text">A run club for every pace, every person, every morning. Bengaluru's community of runners since 2024.</p>
+    </div>
+    <div class="footer__col">
+      <h5>Club</h5>
+      <ul>
+        <li><a href="about-club.html">About the Club</a></li>
+        <li><a href="about-coach.html">About the Coach</a></li>
+        <li><a href="runs.html">Run Schedule</a></li>
+        <li><a href="join.html">Membership</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h5>Training</h5>
+      <ul>
+        <li><a href="runs.html">Beginner Plans</a></li>
+        <li><a href="runs.html">5K to 10K</a></li>
+        <li><a href="runs.html">Half Marathon</a></li>
+        <li><a href="runs.html">Full Marathon</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="https://www.instagram.com/ck_runner198?igsh=MWJ4cGlnZDIwdWhmbg==" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#">Strava Club</a></li>
+        <li><a href="https://wa.me/917892123509" target="_blank" rel="noopener">WhatsApp Group</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h5>Contact Us</h5>
+      <ul>
+        <li><a href="tel:+917892123509">📞 +91 78921 23509</a></li>
+        <li><a href="mailto:nanunimmack@gmail.com">✉️ nanunimmack@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">© 2024 Nanu Nimma CK Run Club · Bengaluru, India</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/ck_runner198?igsh=MWJ4cGlnZDIwdWhmbg==" target="_blank" rel="noopener" class="social-btn"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg></a>
+      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+      <a href="https://wa.me/917892123509" target="_blank" rel="noopener" class="social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  /* ── Achievement filter ── */
+  const filterBtns = document.querySelectorAll('.ach-filter-btn');
+  const achCards   = document.querySelectorAll('.ach-card');
+  const achEmpty   = document.getElementById('achEmpty');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+      let visible = 0;
+
+      achCards.forEach(card => {
+        const match = filter === 'all' || card.dataset.type === filter;
+        card.style.display = match ? 'flex' : 'none';
+        if (match) visible++;
+      });
+
+      achEmpty.style.display = visible === 0 ? 'flex' : 'none';
+    });
+  });
+</script>
+</body>
+</html>

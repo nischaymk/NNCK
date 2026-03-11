@@ -15,7 +15,13 @@
 
 <!-- ── NAV ── -->
 <nav class="nav" id="nav">
-  <a href="index.html" class="nav__logo"><div class="nav__logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div><div class="nav__logo-text"><span class="line1">RUN CLUB</span><span class="line2">NANU NIMMA <span>CK</span></span></div></a>
+  <a href="index.html" class="nav__logo">
+    <div class="nav__logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div>
+    <div class="nav__logo-text">
+      <span class="line2">NANU NIMMA <span>CK</span></span>
+      <span class="line1">RUN CLUB</span>
+    </div>
+  </a>
   <ul class="nav__links">
     <li><a href="index.html" class="nav__link">Home</a></li>
     <li class="nav__dropdown">
@@ -27,11 +33,16 @@
     </li>
     <li><a href="runs.html" class="nav__link">Training</a></li>
     <li><a href="community.html" class="nav__link active">Community</a></li>
-    <li><a href="events.html" class="nav__link active">Events</a></li>
+    <li><a href="events.html" class="nav__link">Events</a></li>
+    <li><a href="achievements.html" class="nav__link">Achievements</a></li>
   </ul>
   <a href="join.html" class="nav__join">Join Us</a>
-  <button class="nav__hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- Mobile Nav -->
 <div class="nav__mobile" id="mobileNav">
   <a href="index.html">Home</a>
   <span class="sub-label">About</span>
@@ -40,6 +51,8 @@
   <div class="divider"></div>
   <a href="runs.html">Training</a>
   <a href="community.html">Community</a>
+  <a href="events.html">Events</a>
+  <a href="achievements.html">Achievements</a>
   <a href="join.html" class="mobile-join">Join Us</a>
 </div>
 
@@ -127,7 +140,7 @@
       </div>
       <div class="runner-card__body">
         <div class="runner-card__name">Dhanush S</div>
-        <div class="runner-card__since">Member since 2022</div>
+        <div class="runner-card__since">Member since 2025</div>
         <p class="runner-card__review">CK told me in week one — your job is to finish, my job is to get you there. Six months later I ran 42.2 km. Best decision I ever made.</p>
       </div>
     </div>
@@ -187,67 +200,9 @@ Ranjith is the example of Age doesn't matter</p>
         <p class="runner-card__review"></p>
       </div>
     </div>
-    <!-- Runner 8-->
-    <div class="runner-card">
-      <div class="runner-card__img-wrap">
-        <img src="runner8.jpeg" alt="Dhanush S">
-        <div class="runner-card__pb-badge">
-          <div class="runner-card__pb-time">18:49</div>
-          <div class="runner-card__pb-race">
-            <span class="runner-card__pb-label">Personal Best</span>
-            5K Run
-          </div>
-        </div>
-      </div>
-      <div class="runner-card__body">
-        <div class="runner-card__name">Dhanush S</div>
-        <div class="runner-card__since">Member since 2022</div>
-        <p class="runner-card__review">CK told me in week one — your job is to finish, my job is to get you there. Six months later I ran 42.2 km. Best decision I ever made.</p>
-      </div>
-    </div>
 
   </div>
 </section>
-
-
-
-<!-- ── PAGE HERO ── -->
-<section class="page-hero">
-  <div class="page-hero__bg"></div>
-  <div class="page-hero__grid"></div>
-  <div class="page-hero__bar"></div>
-  <div class="page-hero__content">
-    <div class="label">
-      <div class="label__dot"></div>
-      <span class="label__text">Community</span>
-    </div>
-    <h1 class="page-hero__title">THE <span class="accent">TRIBE</span></h1>
-    <p class="page-hero__sub">Real runners. Real stories. Real mornings that changed everything.</p>
-  </div>
-</section>
-
-
-
-<!-- ── STATS ── -->
-<div class="strava-band reveal" style="margin:0;">
-  <div class="strava-stat">
-    <div class="strava-stat__num"></div>
-    <div class="strava-stat__label">Active Members</div>
-  </div>
-  <div class="strava-stat">
-    <div class="strava-stat__num"></div>
-    <div class="strava-stat__label">Runs Logged</div>
-  </div>
-  <div class="strava-stat">
-    <div class="strava-stat__num"></div>
-    <div class="strava-stat__label">Km Run Together</div>
-  </div>
-  <div class="strava-stat">
-    <div class="strava-stat__num"></div>
-    <div class="strava-stat__label">Marathons Finished</div>
-  </div>
-</div>
-
 
 
 <!-- ── STRAVA / CONNECT ── -->
@@ -270,12 +225,12 @@ Ranjith is the example of Age doesn't matter</p>
             <div class="join-perk__desc">Track every run and see your progress alongside 840+ clubmates.</div>
           </div>
         </a>
-        <a href="#" class="join-perk" style="max-width:400px;">
+        <a href="https://www.instagram.com/ck_runner198?igsh=MWJ4cGlnZDIwdWhmbg==" class="join-perk" style="max-width:400px;">
           <div class="join-perk__icon">
             <svg viewBox="0 0 24 24" stroke="var(--orange)" fill="none" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg>
           </div>
           <div>
-            <div class="join-perk__title">Follow on Instagram</div>
+            <div class="join-perk__title" href = "" >Follow on Instagram</div>
             <div class="join-perk__desc">Race photos, sunrise shots, training tips, and community moments daily.</div>
           </div>
         </a>
@@ -302,7 +257,7 @@ Ranjith is the example of Age doesn't matter</p>
           <h4>STRAVA</h4>
           <p>Followers tracking every run together.</p>
         </div>
-        <div class="value-card" style="background:var(--charcoal);">
+        <div class="value-card" style="background:var(--charcoal);"> 
           <div class="value-card__num" style="font-size:44px; position:static; color:var(--orange);">1.5K+</div>
           <h4>INSTAGRAM</h4>
           <p>Community of runners, beyond the road.</p>
@@ -334,19 +289,50 @@ Ranjith is the example of Age doesn't matter</p>
 <footer class="footer">
   <div class="footer__top">
     <div class="footer__brand">
-      <div class="footer__brand-logo"><div class="footer__brand-logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div><div class="footer__brand-logo-text"><span class="fl1">Run Club</span><span class="fl2">NANU NIMMA <span>CK</span></span></div></div>
+      <div class="footer__brand-logo"><div class="footer__brand-logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div><div class="footer__brand-logo-text"><span class="fl2">NANU NIMMA <span>CK</span></span><span class="fl1">Run Club</span></div></div>
       <p class="footer__brand-text">A run club for every pace, every person, every morning. Bengaluru's community of runners since 2024.</p>
     </div>
-    <div class="footer__col"><h5>Club</h5><ul><li><a href="about-club.html">About the Club</a></li><li><a href="about-coach.html">About the Coach</a></li><li><a href="runs.html">Run Schedule</a></li><li><a href="join.html">Membership</a></li></ul></div>
-    <div class="footer__col"><h5>Training</h5><ul><li><a href="runs.html">Beginner Plans</a></li><li><a href="runs.html">5K to 10K</a></li><li><a href="runs.html">Half Marathon</a></li><li><a href="runs.html">Full Marathon</a></li></ul></div>
-    <div class="footer__col"><h5>Connect</h5><ul><li><a href="#">Instagram</a></li><li><a href="#">Strava Club</a></li><li><a href="#">WhatsApp Group</a></li><li><a href="#">Contact</a></li></ul></div>
+    <div class="footer__col">
+      <h5>Club</h5>
+      <ul>
+        <li><a href="about-club.html">About the Club</a></li>
+        <li><a href="about-coach.html">About the Coach</a></li>
+        <li><a href="runs.html">Run Schedule</a></li>
+        <li><a href="join.html">Membership</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h5>Training</h5>
+      <ul>
+        <li><a href="runs.html">Beginner Plans</a></li>
+        <li><a href="runs.html">5K to 10K</a></li>
+        <li><a href="runs.html">Half Marathon</a></li>
+        <li><a href="runs.html">Full Marathon</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="https://www.instagram.com/ck_runner198?igsh=MWJ4cGlnZDIwdWhmbg==" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#">Strava Club</a></li>
+        <li><a href="https://wa.me/917892123509" target="_blank" rel="noopener">WhatsApp Group</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h5>Contact Us</h5>
+      <ul>
+        <li><a href="tel:+917892123509">📞 +91 78921 23509</a></li>
+        <li><a href="mailto:nanunimmack@gmail.com">✉️ nanunimmack@gmail.com</a></li>
+      </ul>
+    </div>
   </div>
   <div class="footer__bottom">
     <p class="footer__copy">© 2024 Nanu Nimma CK Run Club · Bengaluru, India</p>
     <div class="socials">
-      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg></a>
+      <a href="https://www.instagram.com/ck_runner198?igsh=MWJ4cGlnZDIwdWhmbg==" target="_blank" rel="noopener" class="social-btn"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg></a>
       <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
-      <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+      <a href="https://wa.me/917892123509" target="_blank" rel="noopener" class="social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
     </div>
   </div>
 </footer>

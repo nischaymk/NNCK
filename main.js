@@ -239,3 +239,48 @@
   }
 
 })();
+
+/* ── JOIN POPUP ── */
+(function () {
+  const overlay  = document.getElementById('popupOverlay');
+  const closeBtn = document.getElementById('popupClose');
+  const dismiss  = document.getElementById('popupDismiss');
+  const snooze   = document.getElementById('popupSnooze');
+
+  // Show after 3 seconds on page load
+  const timer = setTimeout(() => overlay.classList.add('visible'), 3000);
+
+  // Re-appear every 20 seconds after closing
+  overlay.addEventListener('transitionend', () => {
+    if (!overlay.classList.contains('visible')) {
+      setTimeout(() => overlay.classList.add('visible'), 20000);
+    }
+  });
+
+  function closePopup() {
+    overlay.classList.remove('visible');
+    clearTimeout(timer);
+  }
+
+  // Close on X button
+  closeBtn.addEventListener('click', closePopup);
+
+  // Close on overlay click (outside popup)
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closePopup();
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closePopup();
+  });
+
+  // "Don't show again"
+  dismiss.addEventListener('click', closePopup);
+
+  // "Remind me later"
+  snooze.addEventListener('click', (e) => {
+    e.stopPropagation();
+    closePopup();
+  });
+})();
