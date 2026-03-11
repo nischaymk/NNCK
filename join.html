@@ -46,7 +46,6 @@
     </li>
     <li><a href="runs.html" class="nav__link">Training</a></li>
     <li><a href="community.html" class="nav__link">Community</a></li>
-    <li><a href="events.html" class="nav__link">Events</a></li>
     <li><a href="achievements.html" class="nav__link">Achievements</a></li>
   </ul>
   <a href="join.html" class="nav__join active">Join Us</a>
@@ -294,32 +293,32 @@
 
             // Build structured WhatsApp message
             var msg =
-              "🏃 *New Runner Enquiry — Run With Nimma CK*\n" +
+              " *New Runner Enquiry — Run With Nimma CK*\n" +
               "━━━━━━━━━━━━━━━━━━━━\n\n" +
 
-              "*👤 PERSONAL DETAILS*\n" +
+              "*PERSONAL DETAILS*\n" +
               "• Name: " + fullName + "\n" +
               "• Age: " + age + "\n" +
               "• Phone: " + phone + "\n" +
               (height ? "• Height: " + height + "\n" : "") +
               (weight ? "• Weight: " + weight + "\n" : "") +
 
-              "\n*🏅 RUNNING BACKGROUND*\n" +
+              "\n*RUNNING BACKGROUND*\n" +
               "• Running since: " + runYears + "\n" +
               (weeklyKm  ? "• Weekly mileage: " + weeklyKm + "\n" : "") +
               (trainDays ? "• Training days/week: " + trainDays + "\n" : "") +
 
-              "\n*⏱️ PERSONAL BESTS*\n" +
+              "\n* PERSONAL BESTS*\n" +
               (pb5k   ? "• 5K: " + pb5k + "\n" : "• 5K: Not yet\n") +
               (pb10k  ? "• 10K: " + pb10k + "\n" : "• 10K: Not yet\n") +
               (pbHalf ? "• Half Marathon: " + pbHalf + "\n" : "• Half Marathon: Not yet\n") +
               (pbFull ? "• Full Marathon: " + pbFull + "\n" : "• Full Marathon: Not yet\n") +
 
-              "\n*📋 TRAINING HISTORY*\n" +
+              "\n* TRAINING HISTORY*\n" +
               (longestRun ? "• Longest run: " + longestRun + "\n" : "") +
               (injuries   ? "• Injuries: " + injuries + "\n" : "• Injuries: None\n") +
 
-              "\n*🎯 RUNNING GOAL*\n" +
+              "\n*RUNNING GOAL*\n" +
               runGoal +
               (targetRace ? "\n• Target Race: " + targetRace : "") +
 
@@ -327,7 +326,7 @@
               "_Submitted via Nanu Nimma CK website_";
 
             var encoded = encodeURIComponent(msg);
-            var waUrl   = "https://chat.whatsapp.com/FWKhlL9tx755j9TAaHpxI4?text=" + encoded;
+            var waUrl   = "https://wa.me/917892123509?text=" + encoded;
 
             // Button success state
             var btn = document.getElementById('submitBtn');
@@ -355,7 +354,7 @@
   <div class="footer__top">
     <div class="footer__brand">
       <div class="footer__brand-logo"><div class="footer__brand-logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div><div class="footer__brand-logo-text"><span class="fl2">NANU NIMMA <span>CK</span></span><span class="fl1">Run Club</span></div></div>
-      <p class="footer__brand-text">A run club for every pace, every person, every morning. Bengaluru's community of runners since 2024.</p>
+      <p class="footer__brand-text">A run club for every pace, every person, every morning. A growing community of runners in Bengaluru since 2024.</p>
     </div>
     <div class="footer__col">
       <h5>Club</h5>
