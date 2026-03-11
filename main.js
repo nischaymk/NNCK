@@ -247,20 +247,23 @@
   const dismiss  = document.getElementById('popupDismiss');
   const snooze   = document.getElementById('popupSnooze');
 
-  // Show after 3 seconds on page load
-  const timer = setTimeout(() => overlay.classList.add('visible'), 3000);
-
-  // Re-appear every 20 seconds after closing
-  overlay.addEventListener('transitionend', () => {
-    if (!overlay.classList.contains('visible')) {
-      setTimeout(() => overlay.classList.add('visible'), 20000);
-    }
-  });
+  function showPopup() {
+    overlay.classList.add('visible');
+  }
 
   function closePopup() {
     overlay.classList.remove('visible');
-    clearTimeout(timer);
   }
+
+  // First appearance — after 15 seconds
+  setTimeout(showPopup, 15000);
+
+  // Re-appear every 15 seconds after closing
+  overlay.addEventListener('transitionend', () => {
+    if (!overlay.classList.contains('visible')) {
+      setTimeout(showPopup, 15000);
+    }
+  });
 
   // Close on X button
   closeBtn.addEventListener('click', closePopup);
