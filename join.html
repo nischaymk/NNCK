@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 <!-- SEO Meta Tags -->
-<meta name="description" content="Nanu Nimma CK Run Club — Bengaluru's community running club. Structured training, marathon coaching and weekly group runs for all levels.">
-<meta name="keywords" content="run club Bengaluru, running coach Bengaluru, marathon training, CK runner, Nanu Nimma CK">
+<meta name="description" content="Join Nanu Nimma CK Run Club — Bengaluru's community running club. Sign up for structured training, marathon coaching and weekly group runs.">
+<meta name="keywords" content="join run club Bengaluru, running coach Bengaluru, marathon training, CK runner, Nanu Nimma CK">
 <meta name="author" content="Chandrakanth M">
 
-<!-- Open Graph (for Google + social previews) -->
-<meta property="og:title" content="Nanu Nimma CK Run Club">
-<meta property="og:description" content="Bengaluru's community running club. Train smarter, run stronger.">
-<meta property="og:url" content="https://nanunimmack.fit/">
+<!-- Open Graph -->
+<meta property="og:title" content="Join Us — Nanu Nimma CK Run Club">
+<meta property="og:description" content="Join Bengaluru's community running club. Train smarter, run stronger.">
+<meta property="og:url" content="https://nanunimmack.fit/join.html">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://nanunimmack.fit/profile.jpeg">
 
@@ -25,7 +25,6 @@
 <link rel="icon" type="image/jpeg" href="./profile.jpeg">
 <link rel="apple-touch-icon" href="./profile.jpeg">
 <link rel="shortcut icon" href="./profile.jpeg">
-
 </head>
 <body>
 
@@ -52,6 +51,7 @@
     </li>
     <li><a href="runs.html" class="nav__link">Training</a></li>
     <li><a href="community.html" class="nav__link">Community</a></li>
+    <li><a href="events.html" class="nav__link">Events</a></li>
     <li><a href="achievements.html" class="nav__link">Achievements</a></li>
   </ul>
   <a href="join.html" class="nav__join active">Join Us</a>
@@ -94,11 +94,10 @@
 
     <!-- LEFT: benefits -->
     <div class="join-split__left">
-      <div class="label">
-      </div>
-      <h2 class="section__heading">Join run <br><span class="accent">With Nimma CK</span></h2>
-      <p>Become part of a growing running community in Bengaluru. </p>
-      <p><h4>Here’s what makes our training different:</h4></p>
+      <div class="label"></div>
+      <h2 class="section__heading">Join Run <br><span class="accent">With Nimma CK</span></h2>
+      <p>Become part of a growing running community in Bengaluru.</p>
+      <p><h4>Here's what makes our training different:</h4></p>
 
       <div class="join-perks">
         <div class="join-perk">
@@ -125,7 +124,6 @@
             <div class="join-perk__title">Guidance from a competitive runner and certified coach</div>
           </div>
         </div>
-
         <div class="join-perk">
           <div class="join-perk__icon">
             <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
@@ -144,23 +142,20 @@
         </div>
         <p>Whether your goal is to complete your first race or achieve a personal best, we aim to help you become a stronger and more confident runner.</p>
         <h3>Run Together. Grow Together.</h3>
-        
       </div>
     </div>
 
     <!-- RIGHT: form -->
     <div>
-      <div class="join-form-card">
+      <div class="join-form-card" id="formCard">
         <p class="sub">Share the following details so we can understand your running background and guide you with the right training plan.</p>
 
-        <!-- ── SECTION: Personal Details ── -->
+        <!-- Personal Details -->
         <div class="form-section-label">Personal Details</div>
-
         <div class="form-group">
           <label>Full Name <span class="req">*</span></label>
           <input type="text" id="fullName" placeholder="e.g. Ananya Krishnan">
         </div>
-
         <div class="form-row">
           <div class="form-group">
             <label>Age <span class="req">*</span></label>
@@ -171,7 +166,6 @@
             <input type="tel" id="phone" placeholder="+91 98765 43210">
           </div>
         </div>
-
         <div class="form-row">
           <div class="form-group">
             <label>Height</label>
@@ -183,9 +177,8 @@
           </div>
         </div>
 
-        <!-- ── SECTION: Running Background ── -->
+        <!-- Running Background -->
         <div class="form-section-label">Running Background</div>
-
         <div class="form-group">
           <label>How long have you been running? <span class="req">*</span></label>
           <select id="runningYears">
@@ -198,7 +191,6 @@
             <option>5+ years</option>
           </select>
         </div>
-
         <div class="form-row">
           <div class="form-group">
             <label>Avg. weekly mileage (km)</label>
@@ -217,9 +209,8 @@
           </div>
         </div>
 
-        <!-- ── SECTION: Personal Bests ── -->
+        <!-- Personal Bests -->
         <div class="form-section-label">Personal Bests <span style="font-weight:400; color:var(--muted); font-size:11px; letter-spacing:1px;">(if applicable)</span></div>
-
         <div class="form-row">
           <div class="form-group">
             <label>5K</label>
@@ -230,7 +221,6 @@
             <input type="text" id="pb10k" placeholder="e.g. 58:00">
           </div>
         </div>
-
         <div class="form-row">
           <div class="form-group">
             <label>Half Marathon (21.1 km)</label>
@@ -242,124 +232,47 @@
           </div>
         </div>
 
-        <!-- ── SECTION: Training History ── -->
+        <!-- Training History -->
         <div class="form-section-label">Training History</div>
-
         <div class="form-group">
           <label>Longest run completed</label>
           <input type="text" id="longestRun" placeholder="e.g. 21 km">
         </div>
-
         <div class="form-group">
           <label>Any injuries currently or in the past?</label>
           <textarea id="injuries" rows="2" placeholder="e.g. Left knee pain in 2023, now recovered. No current injuries."></textarea>
         </div>
 
-        <!-- ── SECTION: Your Goals ── -->
+        <!-- Your Goals -->
         <div class="form-section-label">Your Goals</div>
-
         <div class="form-group">
           <label>What is your current running goal? <span class="req">*</span></label>
-          <textarea id="runGoal" rows="3" placeholder="e.g. First 10K, sub-50 10K, half marathon, full marathon, improve pace, just run consistently..."></textarea>
+          <textarea id="runGoal" rows="3" placeholder="e.g. First 10K, sub-50 10K, half marathon, full marathon, improve pace..."></textarea>
         </div>
-
         <div class="form-group">
           <label>Target Race <span style="font-weight:400; color:var(--muted); font-size:11px; letter-spacing:1px;">(if any)</span></label>
           <input type="text" id="targetRace" placeholder="e.g. Bengaluru Marathon / Half Marathon / 10K">
         </div>
 
-        <button class="form-submit" type="button" id="submitBtn" onclick="sendToWhatsApp()">Send to Coach on WhatsApp</button>
-        <p class="form-note">Your details will be sent directly to Coach CK on WhatsApp.</p>
-
-        <script>
-          function sendToWhatsApp() {
-            var fullName     = document.getElementById('fullName').value.trim();
-            var age          = document.getElementById('age').value.trim();
-            var phone        = document.getElementById('phone').value.trim();
-            var height       = document.getElementById('height').value.trim();
-            var weight       = document.getElementById('weight').value.trim();
-            var runYears     = document.getElementById('runningYears').value;
-            var weeklyKm     = document.getElementById('weeklyKm').value.trim();
-            var trainDays    = document.getElementById('trainingDays').value;
-            var pb5k         = document.getElementById('pb5k').value.trim();
-            var pb10k        = document.getElementById('pb10k').value.trim();
-            var pbHalf       = document.getElementById('pbHalf').value.trim();
-            var pbFull       = document.getElementById('pbFull').value.trim();
-            var longestRun   = document.getElementById('longestRun').value.trim();
-            var injuries     = document.getElementById('injuries').value.trim();
-            var runGoal      = document.getElementById('runGoal').value.trim();
-            var targetRace   = document.getElementById('targetRace').value.trim();
-
-            // Validation
-            if (!fullName) { alert('Please enter your full name.'); return; }
-            if (!age)      { alert('Please enter your age.'); return; }
-            if (!phone)    { alert('Please enter your WhatsApp number.'); return; }
-            if (!runYears) { alert('Please select how long you have been running.'); return; }
-            if (!runGoal)  { alert('Please describe your running goal.'); return; }
-
-            // Build structured WhatsApp message
-            var msg =
-              " *New Runner Enquiry — Run With Nimma CK*\n" +
-              "━━━━━━━━━━━━━━━━━━━━\n\n" +
-
-              "*PERSONAL DETAILS*\n" +
-              "• Name: " + fullName + "\n" +
-              "• Age: " + age + "\n" +
-              "• Phone: " + phone + "\n" +
-              (height ? "• Height: " + height + "\n" : "") +
-              (weight ? "• Weight: " + weight + "\n" : "") +
-
-              "\n*RUNNING BACKGROUND*\n" +
-              "• Running since: " + runYears + "\n" +
-              (weeklyKm  ? "• Weekly mileage: " + weeklyKm + "\n" : "") +
-              (trainDays ? "• Training days/week: " + trainDays + "\n" : "") +
-
-              "\n* PERSONAL BESTS*\n" +
-              (pb5k   ? "• 5K: " + pb5k + "\n" : "• 5K: Not yet\n") +
-              (pb10k  ? "• 10K: " + pb10k + "\n" : "• 10K: Not yet\n") +
-              (pbHalf ? "• Half Marathon: " + pbHalf + "\n" : "• Half Marathon: Not yet\n") +
-              (pbFull ? "• Full Marathon: " + pbFull + "\n" : "• Full Marathon: Not yet\n") +
-
-              "\n* TRAINING HISTORY*\n" +
-              (longestRun ? "• Longest run: " + longestRun + "\n" : "") +
-              (injuries   ? "• Injuries: " + injuries + "\n" : "• Injuries: None\n") +
-
-              "\n*RUNNING GOAL*\n" +
-              runGoal +
-              (targetRace ? "\n• Target Race: " + targetRace : "") +
-
-              "\n\n━━━━━━━━━━━━━━━━━━━━\n" +
-              "_Submitted via Nanu Nimma CK website_";
-
-            var encoded = encodeURIComponent(msg);
-            var waUrl   = "https://wa.me/917892123509?text=" + encoded;
-
-            // Button success state
-            var btn = document.getElementById('submitBtn');
-            btn.textContent = '✓ Opening WhatsApp...';
-            btn.style.background = '#25D366';
-            btn.style.pointerEvents = 'none';
-
-            window.open(waUrl, '_blank');
-
-            setTimeout(function() {
-              btn.textContent = 'Send to Coach on WhatsApp';
-              btn.style.background = '';
-              btn.style.pointerEvents = '';
-            }, 4000);
-          }
-        </script>
+        <button class="form-submit" type="button" id="submitBtn" onclick="submitForm()">Send Details to Coach</button>
+        <p class="form-note">Your details will be reviewed by Coach CK and he will reach out to you directly.</p>
       </div>
     </div>
+
   </div>
 </section>
 
-
-<<!-- ── FOOTER ── -->
+<!-- ── FOOTER ── -->
 <footer class="footer">
   <div class="footer__top">
     <div class="footer__brand">
-      <div class="footer__brand-logo"><div class="footer__brand-logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div><div class="footer__brand-logo-text"><span class="fl2">NANU NIMMA <span>CK</span></span><span class="fl1">Run Club</span></div></div>
+      <div class="footer__brand-logo">
+        <div class="footer__brand-logo-icon"><img src="profile.jpeg" alt="Nanu Nimma CK Logo"></div>
+        <div class="footer__brand-logo-text">
+          <span class="fl2">NANU NIMMA <span>CK</span></span>
+          <span class="fl1">Run Club</span>
+        </div>
+      </div>
       <p class="footer__brand-text">A run club for every pace, every person, every morning. A growing community of runners in Bengaluru since 2024.</p>
     </div>
     <div class="footer__col">
@@ -385,7 +298,7 @@
       <ul>
         <li><a href="https://www.instagram.com/ck_runner198?igsh=MWJ4cGlnZDIwdWhmbg==" target="_blank" rel="noopener">Instagram</a></li>
         <li><a href="#">Strava Club</a></li>
-        <li><a href="" target="_blank" rel="noopener">WhatsApp Group</a></li>
+        <li><a href="https://chat.whatsapp.com/FWKhlL9tx755j9TAaHpxI4" target="_blank" rel="noopener">WhatsApp Group</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
@@ -400,12 +313,141 @@
   <div class="footer__bottom">
     <p class="footer__copy">© 2024 Nanu Nimma CK Run Club · Bengaluru, India</p>
     <div class="socials">
-      <a href="https://www.instagram.com/ck_runner198?igsh=MWJ4cGlnZDIwdWhmbg==" target="_blank" rel="noopener" class="social-btn"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg></a>
-      <a href="https://wa.me/917892123509" target="_blank" rel="noopener" class="social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
+      <a href="https://www.instagram.com/ck_runner198?igsh=MWJ4cGlnZDIwdWhmbg==" target="_blank" rel="noopener" class="social-btn">
+        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+      </a>
+      <a href="https://wa.me/917892123509" target="_blank" rel="noopener" class="social-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+      </a>
     </div>
   </div>
 </footer>
 
 <script src="main.js"></script>
+
+<script>
+  // ── PASTE YOUR WEB APP URL HERE ──
+  var SHEET_URL = 'https://script.google.com/macros/s/AKfycbxHfX8E-yuV9porbCGCbBM_9FuOpu47GnKhCbMAQXs5gvI-do4OyE31wf9B0jwWMbAj/exec';
+
+  function submitForm() {
+    var fullName   = document.getElementById('fullName').value.trim();
+    var age        = document.getElementById('age').value.trim();
+    var phone      = document.getElementById('phone').value.trim();
+    var height     = document.getElementById('height').value.trim();
+    var weight     = document.getElementById('weight').value.trim();
+    var runYears   = document.getElementById('runningYears').value;
+    var weeklyKm   = document.getElementById('weeklyKm').value.trim();
+    var trainDays  = document.getElementById('trainingDays').value;
+    var pb5k       = document.getElementById('pb5k').value.trim();
+    var pb10k      = document.getElementById('pb10k').value.trim();
+    var pbHalf     = document.getElementById('pbHalf').value.trim();
+    var pbFull     = document.getElementById('pbFull').value.trim();
+    var longestRun = document.getElementById('longestRun').value.trim();
+    var injuries   = document.getElementById('injuries').value.trim();
+    var runGoal    = document.getElementById('runGoal').value.trim();
+    var targetRace = document.getElementById('targetRace').value.trim();
+
+    // Validation
+    if (!fullName) { alert('Please enter your full name.'); return; }
+    if (!age)      { alert('Please enter your age.'); return; }
+    if (!phone)    { alert('Please enter your WhatsApp number.'); return; }
+    if (!runYears) { alert('Please select how long you have been running.'); return; }
+    if (!runGoal)  { alert('Please describe your running goal.'); return; }
+
+    // Button loading state
+    var btn = document.getElementById('submitBtn');
+    btn.textContent = 'Submitting...';
+    btn.style.background = '#555';
+    btn.style.pointerEvents = 'none';
+
+    // Data to send to Google Sheets
+    var formData = {
+      name:         fullName,
+      age:          age,
+      phone:        phone,
+      height:       height || '—',
+      weight:       weight || '—',
+      runningYears: runYears,
+      weeklyKm:     weeklyKm || '—',
+      trainingDays: trainDays || '—',
+      pb5k:         pb5k || '—',
+      pb10k:        pb10k || '—',
+      pbHalf:       pbHalf || '—',
+      pbFull:       pbFull || '—',
+      longestRun:   longestRun || '—',
+      injuries:     injuries || 'None',
+      runGoal:      runGoal,
+      targetRace:   targetRace || '—'
+    };
+
+    fetch(SHEET_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    })
+    .then(function() {
+      // Replace form with success message
+      document.getElementById('formCard').innerHTML = `
+        <div style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 80px 20px;
+          gap: 24px;
+          min-height: 400px;
+        ">
+          <div style="
+            width: 80px; height: 80px;
+            background: rgba(255,69,0,.1);
+            border: 2px solid var(--orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          ">
+            <svg viewBox="0 0 24 24" style="width:36px;height:36px;stroke:#FF4500;fill:none;stroke-width:2.5;">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h3 style="
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 48px;
+            letter-spacing: 2px;
+            color: #FF4500;
+            line-height: 1;
+          ">Form Submitted!</h3>
+          <p style="
+            font-size: 15px;
+            font-weight: 300;
+            color: rgba(255,255,255,.6);
+            line-height: 1.9;
+            max-width: 320px;
+          ">Thank you <strong style="color:#fff;">${fullName}</strong>!<br>
+          Coach CK will reach out to you on<br>
+          <strong style="color:#FF4500;">${phone}</strong> shortly.</p>
+          <p style="
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,.2);
+            margin-top: 12px;
+          ">Run Together. Grow Together.</p>
+        </div>
+      `;
+    })
+    .catch(function() {
+      btn.textContent = 'Send Details to Coach';
+      btn.style.background = '';
+      btn.style.pointerEvents = '';
+      alert('Something went wrong. Please try again or contact us directly on +91 78921 23509.');
+    });
+  }
+</script>
+
 </body>
 </html>
