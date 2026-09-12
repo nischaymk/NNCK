@@ -2685,3 +2685,129 @@ button { cursor: none; }
   .location-card { padding: 36px 28px; }
   .location-card__name { font-size: 26px; }
 }
+
+
+/* ─── RUNNER PROFILE CARDS (4-Column Layout & Compact Spacing) ─── */
+.runner-profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.runner-card {
+  background: var(--charcoal);
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,.04);
+  transition: transform .3s ease, border-color .3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.runner-card:hover { 
+  transform: translateY(-4px); 
+  border-color: rgba(255,69,0,.3);
+}
+
+.runner-card__img-wrap {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  position: relative;
+  background: var(--mid);
+}
+
+.runner-card__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform .5s ease;
+}
+
+.runner-card:hover .runner-card__img-wrap img { 
+  transform: scale(1.03); 
+}
+
+.runner-card__pb-badge {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  z-index: 2;
+  background: var(--orange);
+  padding: 6px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.runner-card__pb-time {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  color: var(--dark);
+  line-height: 1;
+}
+
+.runner-card__pb-race {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,.75);
+  text-align: right;
+  line-height: 1.2;
+}
+
+.runner-card__body {
+  padding: 18px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.runner-card__name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: var(--white);
+  line-height: 1;
+}
+
+.runner-card__since {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.runner-card__review {
+  font-family: 'Barlow', sans-serif;
+  font-size: 12.5px;
+  font-weight: 300;
+  color: rgba(255,255,255,.75);
+  line-height: 1.6;
+  border-top: 1px solid rgba(255,255,255,.07);
+  padding-top: 10px;
+  margin-top: 4px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 1200px) {
+  .runner-profiles-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+}
+
+@media (max-width: 900px) {
+  .runner-profiles-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
+
+@media (max-width: 540px) {
+  .runner-profiles-grid { grid-template-columns: 1fr; gap: 16px; }
+}
